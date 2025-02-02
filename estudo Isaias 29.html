@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/jpeg;base64,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">
+    <title>Estudo Isaias 29</title>
+    <style>
+        body{
+            background-color: rgb(207, 242, 242);
+        
+             
+        }
+        h1{
+            margin-top: -10px;
+            margin-right: 30px;
+            left: 25px ;
+           } 
+
+        .contener{
+           position: absolute;
+            margin-top: 0px;
+            width: 350px;
+            display:flex;
+            flex-direction: row;
+        }
+
+        .id{
+            color: crimson;
+            margin-top: -15px;
+            font-size: 30px;
+          }
+
+           .apagar{
+            background-color: rgb(245, 13, 102);
+            font-size: 25px;
+            
+            
+           }
+           table{
+            margin-top: -10;
+           }
+          td{
+            margin-top: -10px;
+            display:flex;
+            flex-wrap: wrap;
+
+          }
+          p{
+            margin-top: -5px;
+            display:flex;
+            flex-wrap: wrap;
+          }
+          #paralelo{
+            position: absolute;
+            margin-top: 50px;
+            background-color: rgb(17, 235, 235);
+            opacity: 90%;
+          }
+          marquee{
+            font-size: 35px;
+          }
+          .ref{
+            position: absolute;
+            margin-top: 270%;
+            margin-left: 15px;
+           
+            font-size: 25px;
+            width: 300px;
+          }
+        
+    </style>
+</head>
+<body>
+
+
+
+          <marquee behavior="" direction="">Edu.App</marquee><br><br>
+        <h1>Isaias 29</h1><br>
+    <div class="contener" >
+            
+                <table>
+                    <td><p >1 Ai de Ariel, Ariel  a cidade onde Davi  acampou! <p class="id" onclick="para1()"> + </p> </p><p>Acrescentai ano a ano, e sucedam-se as festas.</p><p class="id" onclick="para2()"> + </p></td>
+                    <td><p>2 Contudo porei a Ariel em aperto, e haverá pranto e tristeza; e ela será para mim como Ariel. </p></td>
+                    <td><p>3 Porque te cercarei com o meu arraial, e te sitiarei com baluartes, e levantarei trincheiras contra ti. </p><p class="id" onclick="para3()">+</p></td>
+                    <td><p>4 Então serás abatida, falarás de debaixo da terra, e a tua fala desde o pó sairá fraca, e será a tua voz debaixo da terra, como a de um que tem espírito familiar, e a tua fala assobiará desde o pó.</p><pc class="id" onclick="para4()">+</p></td> 
+                    <td><p>5 E a multidão dos teus inimigos será como o pó miúdo, e a multidão dos tiranos como a pragana que passa, e num momento repentino isso acontecerá.<p class="id" onclick="para5()">+</p></p></td>
+                    <td><p>6 Do Senhor dos Exércitos serás visitada com trovões, e com terremotos, e grande ruído com tufão de vento, e tempestade, e labareda de fogo consumidor.<p class="id" onclick="para6()">+</p></p></td>
+                    <td><p>7 E como o sonho e uma visão de noite será a multidão de todas as nações que hão de pelejar contra Ariel, como também todos os que pelejarem contra ela e contra a sua fortaleza, e a puserem em aperto.</p><p class="id" onclick="para7()">+</p></td>
+                    <td><p>8 Será também como o faminto que sonha, que está a comer, porém, acordando, sente-se vazio; ou como o sedento que sonha que está a beber, porém, acordando, eis que ainda desfalecido se acha, e a sua alma com sede; assim será toda a multidão das nações, que pelejarem contra o monte Sião.</p><p class="id" onclick="para8()">+</p></td>
+                    <td><p>9 Tardai, e maravilhai-vos, folgai, e clamai; bêbados estão, mas não de vinho, andam titubeando, mas não de bebida forte.</p><p class="id" onclick="para9()">+</p></td>
+                    <td><p>10 Porque o Senhor derramou sobre vós um espírito de profundo sono, e fechou os vossos olhos, vendou os profetas, e os vossos principais videntes.</p><p class="id" onclick="para10()">+</p></td>
+                    <td><p>11 Por isso toda a visão vos é como as palavras de um livro selado que se dá ao que sabe ler, dizendo: Lê isto, peço-te; e ele dirá: Não posso, porque está selado.</p><p class="id" onclick="para11()">+</p></td>
+                    <td><p>12 Ou dá-se o livro ao que não sabe ler, dizendo: Lê isto, peço-te; e ele dirá: Não sei ler.</p><p class="id" onclick="para12()">+</p></td>
+                    <td><p>13 Porque o Senhor disse: Pois que este povo se aproxima de mim, e com a sua boca, e com os seus lábios me honra, mas o seu coração se afasta para longe de mim e o seu temor para comigo consiste só em mandamentos de homens, em que foi instruído;</p><p class="id" onclick="para13()">+</p></td>
+                    <td><p>14 Portanto eis que continuarei a fazer uma obra maravilhosa no meio deste povo, uma obra maravilhosa e um assombro; porque a sabedoria dos seus sábios perecerá, e o entendimento dos seus prudentes se esconderá.</p><p class="id" onclick="para14()">+</p></td>
+                    <td><p>15 Ai dos que querem esconder profundamente o seu propósito do Senhor, e fazem as suas obras às escuras, e dizem: Quem nos vê? E quem nos conhece?</p><p class="id" onclick="para15()">+</p></td>
+                    <td>16 Vós tudo perverteis, como se o oleiro fosse igual ao barro, e a obra dissesse do seu artífice: Não me fez; e o vaso formado dissesse do seu oleiro: Nada sabe.<p class="id" onclick="para16()">+</p></td>
+                    <td><p>17 Porventura não se converterá o Líbano, num breve momento, em campo fértil? E o campo fértil não se reputará por um bosque?</p><p class="id" onclick="para17()">+</p></td>
+                    <td><p>18 E naquele dia os surdos ouvirão as palavras do livro, e dentre a escuridão e dentre as trevas os olhos dos cegos as verão.</p><p class="id" onclick="para18()">+</p></td>
+                    <td><p>19 E os mansos terão gozo sobre gozo no Senhor; e os necessitados entre os homens se alegrarão no Santo de Israel.</p><p class="id" onclick="para19()">+</p></td>
+                    <td><p>20 Porque o tirano é reduzido a nada, e se consome o escarnecedor, e todos os que se dão à iniqüidade são desarraigados;</p><p class="id" onclick="para20()">+</p></td>
+                    <td><p>21 Os que fazem culpado ao homem por uma palavra, e armam laços ao que repreende na porta, e os que sem motivo põem de parte o justo.</p><p class="id" onclick="para21()">+</p></td>
+                    <td><p>22 Portanto assim diz o Senhor, que remiu a Abraão, acerca da casa de Jacó: Jacó não será agora envergonhado, nem agora se descorará a sua face.</p><p class="id" onclick="para22()">+</p></td>
+                    <td><p>23 Mas quando ele vir seus filhos, obra das minhas mãos no meio dele, santificarão o meu nome; sim, santificarão ao Santo de Jacó, e temerão ao Deus de Israel.</p><p class="id" onclick="para23()">+</p></td>
+                    <td><p>24 E os errados de espírito virão a ter entendimento, e os murmuradores aprenderão doutrina.</p><p class="id" onclick="para24()">+</p></td>
+               <br>
+                
+             
+
+                
+                 
+                </table>
+              
+    </div>
+    
+               <div id="paralelo">
+                <p class="v0" onclick="busc()"></p>
+                  <p class="v1"></p>
+                  <p class="v2"></p>
+                 <p class="v3"></p>
+                 <p class="v4"></p>
+                 <p class="v5"></p>
+                 <p class="v6"></p>
+                 <p class="apagar" onclick="apagar()"></p>
+                 <p class="voz" onclick="voz()"></p>
+                 
+
+                </div>
+                
+                <div class="ref">
+                    <a  href="index.html">Inicio</a>
+                </div>
+    
+       <script>
+       function para1(){
+        let mv0="Ezequiel 43 versiculo 15,16"
+        let mv1="15 E o altar, de quatro côvados; e desde o altar e para cima havia quatro pontas.  16 E o altar terá doze côvados de comprimento, e doze de largura, quadrado nos quatro lados. "
+        let mv2="2 Samuel 5 versiculo 9"
+        let mv3="9 Assim habitou Davi na fortaleza, e a chamou a cidade de Davi; e Davi foi  edificando em redor, desde Milo para dentro."
+
+
+        
+        document.getElementById("paralelo").style.marginTop = "-10px";
+  
+        document.querySelector(".v1").textContent=mv1
+        document.querySelector(".v0").textContent=mv0
+        document.querySelector(".v2").textContent=mv2
+        document.querySelector(".v3").textContent=mv3
+        document.querySelector(".apagar").textContent="<< Voltar"
+       
+    };
+
+    function busc(){
+          
+    }
+
+
+
+
+    function para2(){
+
+      document.getElementById("paralelo").style.marginTop = "50px";
+       let voz= document.querySelector(".v1").textContent="Setenta semanas estão determinadas sobre o teu povo e sobre a tua santa cidade, para fazer cessar a transgressão, para dar fim aos pecados, para expiar a iniquidade, para trazer a justiça eterna, para selar a visão e a profecia e para ungir o Santo dos Santos. Sabe e entende: desde a saída da ordem para restaurar e para edificar Jerusalém, até ao Ungido, ao Príncipe, sete semanas e sessenta e duas semanas; as praças e as circunvalações se reedificarão, mas em tempos angustiosos. Depois das sessenta e duas semanas, será morto o Ungido e já não estará; e o povo de um príncipe que há de vir destruirá a cidade e o santuário, e o seu fim será num dilúvio, e até ao fim haverá guerra; desolações são determinadas. Ele fará firme aliança com muitos, por uma semana; na metade da semana, fará cessar o sacrifício e a oferta de manjares; sobre a asa das abominações virá o assolador, até que a destruição, que está determinada, se derrame sobre ele."
+        document.querySelector(".v0").textContent="Daniel 9:24-27"
+        document.querySelector(".v2").textContent="Naum 1 versiculo 15"
+        document.querySelector(".v3").textContent="15° Eis sobre os montes os pés do que traz as boas novas, do que anuncia a paz! Celebra as tuas festas, ó Judá, cumpre os teus votos, porque o ímpio não tornará mais a passar por ti; ele é inteiramente exterminado."
+        document.querySelector(".apagar").textContent="<< Voltar"
+        document.querySelector(".voz").textContent="Voz"
+      
+    }
+    function para3(){
+
+      document.getElementById("paralelo").style.marginTop = "80px";
+        document.querySelector(".v1").textContent="11° Agora se congregaram muitas nações contra ti, que dizem: Seja profanada, e vejam os nossos olhos o seu desejo sobre Sião."
+        document.querySelector(".v0").textContent="Miqueias 4 : 11,12,13"
+        document.querySelector(".v2").textContent="12° Mas não sabem os pensamentos do Senhor, nem entendem o seu conselho; porque as ajuntou como gavelas numa eira."
+        document.querySelector(".v3").textContent="13° Levanta-te e trilha, ó filha de Sião; porque eu farei de ferro o teu chifre, e de bronze as tuas unhas; e esmiuçarás a muitos povos, e o seu ganho será consagrado ao Senhor, e os seus bens ao Senhor de toda a terra."
+        document.querySelector(".v4").textContent="Apocalipse 19: 15, 16"
+        document.querySelector(".v5").textContent="15° E da sua boca saía uma aguda espada, para ferir com ela as nações; e ele as regerá com vara de ferro; e ele mesmo é o que pisa o lagar do vinho do furor e da ira do Deus Todo-Poderoso."
+        document.querySelector(".v6").textContent="¹⁶ E no manto e na sua coxa tem escrito este nome: Rei dos reis, e Senhor dos senhores."
+        document.querySelector(".apagar").textContent="<< Voltar"
+
+    } 
+    function para4(){
+      document.getElementById("paralelo").style.marginTop = "130px";
+      document.querySelector(".v1").textContent="9° Ajuntai-vos, ó povos, e sereis quebrantados; dai ouvidos, todos os que sois de terras longínquas; cingi-vos e sereis feitos em pedaços, cingi-vos e sereis feitos em pedaços."
+        document.querySelector(".v0").textContent="Isaias 8:9"
+        document.querySelector(".v2").textContent="Zacarias 12: 10,11"
+        document.querySelector(".v3").textContent="10° Mas sobre a casa de Davi, e sobre os habitantes de Jerusalém, derramarei o Espírito de graça e de súplicas; e olharão para mim, a quem traspassaram; e prantearão sobre ele, como quem pranteia pelo filho unigênito; e chorarão amargamente por ele, como se chora amargamente pelo primogênito."
+        document.querySelector(".v4").textContent="¹¹ Naquele dia será grande o pranto em Jerusalém, como o pranto de Hadade-Rimom no vale de Megido."
+        document.querySelector(".v5").textContent=""
+        document.querySelector(".v6").textContent=""
+        document.querySelector(".apagar").textContent="<< Voltar"
+
+    }
+    function para5(){
+      document.getElementById("paralelo").style.marginTop = "160px";
+      document.querySelector(".v1").textContent="O HOMEM que muitas vezes repreendido endurece a cerviz, de repente será destruído sem que haja remédio."
+        document.querySelector(".v0").textContent="Provérbios 29,1"
+        document.querySelector(".v2").textContent="Malaquias 3,1"
+        document.querySelector(".v3").textContent="EIS que eu envio o meu mensageiro, que preparará o caminho diante de mim; e de repente virá ao seu templo o Senhor, a quem vós buscais; e o mensageiro da aliança, a quem vós desejais, eis que ele vem, diz o Senhor dos Exércitos."
+        document.querySelector(".v4").textContent="Jeremias 6,26"
+        document.querySelector(".v5").textContent="Ó filha do meu povo, cinge-te de saco, e revolve-te na cinza; pranteia como por um filho único, pranto de amargura; porque de repente virá o destruidor sobre nós."
+        document.querySelector(".v6").textContent=""
+        document.querySelector(".apagar").textContent="<< Voltar"
+
+    }
+    function para6(){
+      document.getElementById("paralelo").style.marginTop = "190px";
+      document.querySelector(".v1").textContent="19° E abriu-se no céu o templo de Deus, e a arca do seu concerto foi vista no seu templo; e houve relâmpagos, e vozes, e trovões, e terremotos, e grande saraiva."
+        document.querySelector(".v0").textContent="Apocalipse 11:19"
+        document.querySelector(".v2").textContent="1 Reis 19:11-12"
+        document.querySelector(".v3").textContent="E ele lhe disse: Sai para fora e põe-te neste monte perante a face do SENHOR. E eis que passava o SENHOR, como também um grande e forte vento, que fendia os montes e quebrava as penhas diante da face do SENHOR; porém o SENHOR não estava no vento; e, depois do vento, um terremoto; também o SENHOR não estava no terremoto; e, depois do terremoto, um fogo; porém também o SENHOR não estava no fogo; e, depois do fogo, uma voz mansa e delicada."
+        document.querySelector(".v4").textContent="Zacarias 14:5"
+        document.querySelector(".v5").textContent="E fugireis pelo vale dos meus montes (porque o vale dos montes chegará até Azel) e fugireis assim como fugistes do terremoto nos dias de Uzias, rei de Judá; então, virá o SENHOR, meu Deus, e todos os santos contigo, ó Senhor"
+        document.querySelector(".v6").textContent=""
+        document.querySelector(".apagar").textContent="<< Voltar"
+
+    }
+    function para7(){
+      document.getElementById("paralelo").style.marginTop = "430px";
+      document.querySelector(".v1").textContent="Falou Daniel, e disse: Eu estava olhando na minha visão da noite, e eis que os quatro ventos do céu agitavam o mar grande."
+        document.querySelector(".v0").textContent="Daniel 7:2,3"
+        document.querySelector(".v2").textContent="E quatro animais grandes, diferentes uns dos outros, subiam do mar."
+        document.querySelector(".v3").textContent="Jó 33:15"
+        document.querySelector(".v4").textContent="15 Em sonho ou em visão noturna, quando cai sono profundo sobre os homens, e adormecem na cama."
+        document.querySelector(".v5").textContent="Gênesis 46:2"
+        document.querySelector(".v6").textContent="E Deus falou a Israel por meio de uma visão noturna: Jacó! Jacó! Eis-me aqui, respondeu ele."
+
+
+      document.querySelector(".apagar").textContent="<< Voltar"
+
+    }
+    function para8(){
+      document.getElementById("paralelo").style.marginTop = "600px";
+      document.querySelector(".v1").textContent="2 Porque eis que teus inimigos fazem tumulto, e os que te odeiam levantaram a cabeça."
+        document.querySelector(".v0").textContent="Salmos 83:2,3,4,5"
+        document.querySelector(".v2").textContent="3 Tomaram astuto conselho contra o teu povo, e consultaram contra os teus escondidos."
+        document.querySelector(".v3").textContent="4 Disseram: Vinde, e desarraiguemo-los para que não sejam nação, nem haja mais memória do nome de Israel."
+        document.querySelector(".v4").textContent="5 Porque consultaram juntos e unânimes; eles se unem contra ti:"
+        document.querySelector(".v5").textContent=""
+        document.querySelector(".v6").textContent=""
+      document.querySelector(".apagar").textContent="<< Voltar"
+
+
+    }
+    function para9(){
+      document.getElementById("paralelo").style.marginTop = "800px";
+      document.querySelector(".v1").textContent="E não vos embriagueis com vinho, em que há contenda, mas enchei-vos do Espirito;"
+        document.querySelector(".v0").textContent="Efésios 5:18"
+        document.querySelector(".v2").textContent="1 Tessalonicenses 5:7"
+        document.querySelector(".v3").textContent="Porque os que dormem dormem de noite, e os que se embebedam, embebedam-se de noite."
+        document.querySelector(".v4").textContent="1 Pedro 4:3"
+        document.querySelector(".v5").textContent="Porque é bastante que no tempo passado da vida fizéssemos a vontade dos gentios, andando em dissoluções, concupiscências, borrachices, glutonarias, bebedices e abomináveis idolatrias;"
+        document.querySelector(".v6").textContent=""
+
+      document.querySelector(".apagar").textContent="<< Voltar" 
+    }
+    function para10(){
+      document.getElementById("paralelo").style.marginTop = "900px";
+      document.querySelector(".v1").textContent="Deixai-os: são condutores cegos: ora, se um cego guiar outro cego, ambos cairão na cova."
+        document.querySelector(".v0").textContent="Mateus 15:14"
+        document.querySelector(".v2").textContent="Deuteronômio 28:28"
+        document.querySelector(".v3").textContent="O SENHOR te ferirá com loucura, e com cegueira, e com pasmo do coração."
+        document.querySelector(".v4").textContent="João 9:39"
+        document.querySelector(".v5").textContent="E disse-lhe Jesus: Eu vim a este mundo para juízo, a fim de que os que não vêem vejam, e os que vêem sejam cegos."
+        document.querySelector(".v6").textContent=""
+
+      document.querySelector(".apagar").textContent="<< Voltar" 
+    }
+    function para11(){
+      document.getElementById("paralelo").style.marginTop = "1100px";
+      document.querySelector(".v1").textContent="1 E vi na destra do que estava assentado sobre o trono um livro escrito por dentro e por fora, selado com sete selos. 2 E vi um anjo forte, bradando com grande voz: Quem é digno de abrir o livro e de desatar os seus selos? 3 E ninguém no céu, nem na terra, nem debaixo da terra, podia abrir o livro, nem olhar para ele. 4 E eu chorava muito, porque ninguém fora achado digno de abrir o livro, nem de o ler, nem de olhar para ele. "
+        document.querySelector(".v0").textContent="Apocalipse 5:1,2,3,4"
+        document.querySelector(".v2").textContent="Daniel 12:4"
+        document.querySelector(".v3").textContent=" E tu, Daniel, encerra estas palavras e sela este livro, até ao fim do tempo; muitos correrão de uma parte para outra, e o conhecimento se multiplicará."
+        document.querySelector(".v4").textContent="Daniel 12:9; E ele disse: Vai, Daniel, porque estas palavras estão fechadas e seladas até ao tempo do fim. "
+        document.querySelector(".v5").textContent=" Pros dias de hoje "
+        document.querySelector(".v6").textContent="Apocalipse 22:10; E disse-me: Não seles as palavras da profecia deste livro; porque próximo está o tempo. "
+
+      document.querySelector(".apagar").textContent="<< Voltar" 
+    }
+    function para12(){
+      document.getElementById("paralelo").style.marginTop = "1200px";
+      document.querySelector(".v1").textContent="5 Na mesma hora apareceram uns dedos de mão de homem, e escreviam, defronte do castiçal, na caiadura da parede do palácio real; e o rei via a parte da mão que estava escrevendo. 6 Mudou-se então o semblante do rei, e os seus pensamentos o turbaram; as juntas dos seus lombos se relaxaram, e os seus joelhos batiam um no outro.  7 E gritou o rei com força, que se introduzissem os astrólogos, os caldeus e os adivinhadores; e falou o rei, dizendo aos sábios de babilônia: Qualquer que ler este escrito, e me declarar a sua interpretação, será vestido de púrpura, e trará uma cadeia de ouro ao pescoço e, no reino, será o terceiro governante.  8 Então entraram todos os sábios do rei; mas não puderam ler o escrito, nem fazer saber ao rei a sua interpretação."
+        document.querySelector(".v0").textContent="Daniel 5:5,6,7,8"
+        document.querySelector(".v2").textContent=""
+        document.querySelector(".v3").textContent=""
+        document.querySelector(".v4").textContent=""
+        document.querySelector(".v5").textContent=""
+        document.querySelector(".v6").textContent=""
+
+      document.querySelector(".apagar").textContent="<< Voltar" 
+    }
+    function para13(){
+      document.getElementById("paralelo").style.marginTop = "1300px";
+      document.querySelector(".v1").textContent="7 Em vão, porém, me honram,Ensinando doutrinas que são mandamentos de homens."
+        document.querySelector(".v0").textContent="Marcos 7:7"
+        document.querySelector(".v2").textContent="Colossenses 2:22"
+        document.querySelector(".v3").textContent="As quais coisas todas perecem pelo uso, segundo os preceitos e doutrinas dos homens;"
+        document.querySelector(".v4").textContent="Tito 1:14  Não dando ouvidos às fábulas judaicas, nem aos mandamentos de homens que se desviam da verdade. "
+        document.querySelector(".v5").textContent="Oséias 5:11 Efraim está oprimido e quebrantado no juízo, porque quis andar após o mandamento dos homens. "
+        document.querySelector(".v6").textContent="Gálatas 1:10 Porque, persuado eu agora a homens ou a Deus? ou procuro agradar a homens? Se estivesse ainda agradando aos homens, não seria servo de Cristo."
+
+      document.querySelector(".apagar").textContent="<< Voltar" 
+    }
+    function para14(){
+      document.getElementById("paralelo").style.marginTop = "1400px";
+      document.querySelector(".v1").textContent=" Porque está escrito: Destruirei a sabedoria dos sábios, E aniquilarei a inteligência dos inteligentes."
+        document.querySelector(".v0").textContent="1 Coríntios 1:19"
+        document.querySelector(".v2").textContent="1 Coríntios 1:27,28,29"
+        document.querySelector(".v3").textContent="27 Mas Deus escolheu as coisas loucas deste mundo para confundir as sábias; e Deus escolheu as coisas fracas deste mundo para confundir as fortes;  28 E Deus escolheu as coisas vis deste mundo, e as desprezíveis, e as que não são, para aniquilar as que são; 29 Para que nenhuma carne se glorie perante ele."
+        document.querySelector(".v4").textContent="Daniel 2:21 E ele muda os tempos e as estações; ele remove os reis e estabelece os reis; ele dá sabedoria aos sábios e conhecimento aos entendidos. "
+        document.querySelector(".v5").textContent="Jeremias 8:9 Os sábios são envergonhados, espantados e presos; eis que rejeitaram a palavra do Senhor; que sabedoria, pois, têm eles? "
+        document.querySelector(".v6").textContent="Jeremias 49:7 Acerca de Edom. Assim diz o Senhor dos Exércitos: Acaso não há mais sabedoria em Temã? Pereceu o conselho dos entendidos? Corrompeu-se a sua sabedoria? "
+
+      document.querySelector(".apagar").textContent="<< Voltar" 
+    }
+    function para15(){
+      document.getElementById("paralelo").style.marginTop = "1580px";
+      document.querySelector(".v1").textContent="Deuteronômio 5:8"
+        document.querySelector(".v0").textContent=" Não farás para ti imagem de escultura, nem semelhança alguma do que há em cima no céu, nem em baixo na terra, nem nas águas debaixo da terra; "
+        document.querySelector(".v2").textContent="Habacuque 2:18 Que aproveita a imagem de escultura, depois que a esculpiu o seu artífice? Ela é imagem de fundição que ensina mentira, para que quem a formou confie na sua obra, fazendo ídolos mudos?"
+        document.querySelector(".v3").textContent="Levítico 26:1 Não fareis para vós ídolos, nem vos levantareis imagem de escultura, nem estátua, nem poreis pedra figurada na vossa terra, para inclinar-vos a ela; porque eu sou o SENHOR vosso Deus."
+        document.querySelector(".v4").textContent="2 Crônicas 33:7 Também pôs uma imagem de escultura do ídolo que tinha feito, na casa de Deus, da qual Deus tinha falado a Davi e a Salomão seu filho: Nesta casa e em Jerusalém, que escolhi de todas as tribos de Israel, porei o meu nome para sempre. "
+        document.querySelector(".v5").textContent="Jeremias 10:14 Todo o homem é embrutecido no seu conhecimento; envergonha-se todo o fundidor da sua imagem de escultura; porque sua imagem fundida é mentira, e nelas não há espírito. "
+        document.querySelector(".v6").textContent="Ezequiel 8:5 E disse-me: Filho do homem, levanta agora os teus olhos para o caminho do norte. E levantei os meus olhos para o caminho do norte, e eis que ao norte da porta do altar, estava esta imagem de ciúmes na entrada."
+
+      document.querySelector(".apagar").textContent="<<Voltar"
+    }
+    function para16(){
+      document.getElementById("paralelo").style.marginTop = "1680px";
+      document.querySelector(".v1").textContent=" 2 Levanta-te, e desce à casa do oleiro, e lá te farei ouvir as minhas palavras.  3 E desci à casa do oleiro, e eis que ele estava fazendo a sua obra sobre as rodas,  4 Como o vaso, que ele fazia de barro, quebrou-se na mão do oleiro, tornou a fazer dele outro vaso, conforme o que pareceu bem aos olhos do oleiro fazer.  5 Então veio a mim a palavra do Senhor, dizendo: 6 Não poderei eu fazer de vós como fez este oleiro, ó casa de Israel? diz o Senhor. Eis que, como o barro na mão do oleiro, assim sois vós na minha mão, ó casa de Israel."
+        document.querySelector(".v0").textContent="Jremias 18:2,3,4,5,6"
+        document.querySelector(".v2").textContent="Romanos 1:23"
+        document.querySelector(".v3").textContent=" E mudaram a glória do Deus incorruptível em semelhança da imagem de homem corruptível, e de aves, e de quadrúpedes, e de répteis."
+        document.querySelector(".v4").textContent=""
+        document.querySelector(".v5").textContent=""
+        document.querySelector(".v6").textContent=""
+
+      document.querySelector(".apagar").textContent="<< Voltar" 
+    }
+    function para17(){
+      document.getElementById("paralelo").style.marginTop = "1780px";
+      document.querySelector(".v1").textContent="“O Senhor dos Exércitos tem um dia reservado para todos os orgulhosos e altivos, para tudo o que é exaltado para que eles sejam humilhados; para todos os cedros do Líbano, altos e altivos, e todos os carvalhos de Basã.”"
+        document.querySelector(".v0").textContent="(Isaías 2.12-13)."
+        document.querySelector(".v2").textContent="(1 Reis 6.18)“As árvores do Senhor são bem regadas, os cedros do Líbano que ele plantou.” "
+        document.querySelector(".v3").textContent="“(Salmos 104.16) O interior do templo era de cedro, com figuras entalhadas de frutos e flores abertas. Tudo era de cedro; não se via pedra alguma.”"
+        document.querySelector(".v4").textContent="“(Salmos 92.12) Os justos florescerão como a palmeira, crescerão como o cedro do Líbano.” "
+        document.querySelector(".v5").textContent="(Ezequiel 17.22-24)"
+        document.querySelector(".v6").textContent="“Assim diz o Soberano Senhor: Eu mesmo apanharei um broto bem do alto de um cedro e o plantarei; arrancarei um renovo tenro de seus ramos mais altos e o plantarei num monte alto e IMPONENTE. Nos montes altos de Israel eu o plantarei; ele produzirá galhos e dará fruto e se tornará um cedro viçoso. Pássaros de todo tipo se aninharão nele; encontrarão abrigo à sombra de seus galhos. Todas as árvores do campo saberão que eu, o Senhor, faço cair a árvore alta e faço crescer bem alto a árvore baixa. Eu resseco a árvore verde e faço florescer a árvore seca. Eu o Senhor falei, e eu o farei.” "
+
+      document.querySelector(".apagar").textContent="<< Voltar" 
+    }
+    function para18(){
+      document.getElementById("paralelo").style.marginTop = "1880px";
+      document.querySelector(".v1").textContent="Daniel 12:4 E tu, Daniel, encerra estas palavras e sela este livro, até ao fim do tempo; muitos correrão de uma parte para outra, e o conhecimento se multiplicará."
+        document.querySelector(".v2").textContent="(Apocalipse 6:2-8) ² E olhei, e eis um cavalo branco; e o que estava assentado sobre ele tinha um arco; e foi-lhe dada uma coroa, e saiu vitorioso, e para vencer.³ E, havendo aberto o segundo selo, ouvi o segundo animal, dizendo: Vem, e vê.⁴ E saiu outro cavalo, vermelho; e ao que estava assentado sobre ele foi dado que tirasse a paz da terra, e que se matassem uns aos outros; e foi-lhe dada uma grande espada.⁵ E, havendo aberto o terceiro selo, ouvi dizer o terceiro animal: Vem, e vê. E olhei, e eis um cavalo preto e o que sobre ele estava assentado tinha uma balança em sua mão.⁶ E ouvi uma voz no meio dos quatro animais, que dizia: Uma medida de trigo por um dinheiro, e três medidas de cevada por um dinheiro; e não danifiques o azeite e o vinho.⁷ E, havendo aberto o quarto selo, ouvi a voz do quarto animal, que dizia: Vem, e vê.⁸ E olhei, e eis um cavalo amarelo, e o que estava assentado sobre ele tinha por nome Morte; e o inferno o seguia; e foi-lhes dado poder para matar a quarta parte da terra, com espada, e com fome, e com peste, e com as feras da terra. "
+        document.querySelector(".v0").textContent="(Daniel 7:1-7) ¹ No primeiro ano de Belsazar, rei de babilônia, teve Daniel um sonho e visões da sua cabeça quando estava na sua cama; escreveu logo o sonho, e relatou a suma das coisas.² Falou Daniel, e disse: Eu estava olhando na minha visão da noite, e eis que os quatro ventos do céu agitavam o mar grande.³ E quatro animais grandes, diferentes uns dos outros, subiam do mar.⁴ O primeiro era como leão, e tinha asas de águia; enquanto eu olhava, foram-lhe arrancadas as asas, e foi levantado da terra, e posto em pé como um homem, e foi-lhe dado um coração de homem.⁵ Continuei olhando, e eis aqui o segundo animal, semelhante a um urso, o qual se levantou de um lado, tendo na boca três costelas entre os seus dentes; e foi-lhe dito assim: Levanta-te, devora muita carne.⁶ Depois disto, eu continuei olhando, e eis aqui outro, semelhante a um leopardo, e tinha quatro asas de ave nas suas costas; tinha também este animal quatro cabeças, e foi-lhe dado domínio.⁷ Depois disto eu continuei olhando nas visões da noite, e eis aqui o quarto animal, terrível e espantoso, e muito forte, o qual tinha dentes grandes de ferro; ele devorava e fazia em pedaços, e pisava aos pés o que sobejava; era diferente de todos os animais que apareceram antes dele, e tinha dez chifres. "
+        document.querySelector(".v3").textContent="Atos 8:26-39) ²⁶ E o anjo do Senhor falou a Filipe, dizendo: Levanta-te, e vai para o lado do sul, ao caminho que desce de Jerusalém para Gaza, que está deserta.²⁷ E levantou-se, e foi; e eis que um homem etíope, eunuco, mordomo-mor de Candace, rainha dos etíopes, o qual era superintendente de todos os seus tesouros, e tinha ido a Jerusalém para adoração,²⁸ Regressava e, assentado no seu carro, lia o profeta Isaías.²⁹ E disse o Espírito a Filipe: Chega-te, e ajunta-te a esse carro.³⁰ E, correndo Filipe, ouviu que lia o profeta Isaías, e disse: Entendes tu o que lês?³¹ E ele disse: Como poderei entender, se alguém não me ensinar? E rogou a Filipe que subisse e com ele se assentasse.³² E o lugar da Escritura que lia era este: Foi levado como a ovelha para o matadouro; e, como está mudo o cordeiro diante do que o tosquia, Assim não abriu a sua boca.³³ Na sua humilhação foi tirado o seu julgamento; E quem contará a sua geração? Porque a sua vida é tirada da terra.³⁴ E, respondendo o eunuco a Filipe, disse: Rogo-te, de quem diz isto o profeta? De si mesmo, ou de algum outro?³⁵ Então Filipe, abrindo a sua boca, e começando nesta Escritura, lhe anunciou a Jesus.³⁶ E, indo eles caminhando, chegaram ao pé de alguma água, e disse o eunuco: Eis aqui água; que impede que eu seja batizado?³⁷ E disse Filipe: É lícito, se crês de todo o coração. E, respondendo ele, disse: Creio que Jesus Cristo é o Filho de Deus.³⁸ E mandou parar o carro, e desceram ambos à água, tanto Filipe como o eunuco, e o batizou.³⁹ E, quando saíram da água, o Espírito do Senhor arrebatou a Filipe, e não o viu mais o eunuco; e, jubiloso, continuou o seu caminho. "
+        document.querySelector(".v4").textContent=""
+        document.querySelector(".v5").textContent=""
+        document.querySelector(".v6").textContent=""
+
+      document.querySelector(".apagar").textContent="<< Voltar" 
+    }
+    function para19(){
+      document.getElementById("paralelo").style.marginTop = "1980px";
+      document.querySelector(".v1").textContent=""
+        document.querySelector(".v0").textContent=""
+        document.querySelector(".v2").textContent=""
+        document.querySelector(".v3").textContent=""
+        document.querySelector(".v4").textContent=""
+        document.querySelector(".v5").textContent=""
+        document.querySelector(".v6").textContent=""
+
+      document.querySelector(".apagar").textContent="<< Voltar" 
+    }
+    function para20(){
+      document.getElementById("paralelo").style.marginTop = "2080px";
+      document.querySelector(".v1").textContent=""
+        document.querySelector(".v0").textContent=""
+        document.querySelector(".v2").textContent=""
+        document.querySelector(".v3").textContent=""
+        document.querySelector(".v4").textContent=""
+        document.querySelector(".v5").textContent=""
+        document.querySelector(".v6").textContent=""
+
+      document.querySelector(".apagar").textContent="<< Voltar" 
+    }
+    function para21(){
+      document.getElementById("paralelo").style.marginTop = "2180px";
+      document.querySelector(".v1").textContent=""
+        document.querySelector(".v0").textContent=""
+        document.querySelector(".v2").textContent=""
+        document.querySelector(".v3").textContent=""
+        document.querySelector(".v4").textContent=""
+        document.querySelector(".v5").textContent=""
+        document.querySelector(".v6").textContent=""
+
+      document.querySelector(".apagar").textContent="<< Voltar" 
+    }
+    function para22(){
+      document.getElementById("paralelo").style.marginTop = "2300px";
+      document.querySelector(".v1").textContent=""
+        document.querySelector(".v0").textContent=""
+        document.querySelector(".v2").textContent=""
+        document.querySelector(".v3").textContent=""
+        document.querySelector(".v4").textContent=""
+        document.querySelector(".v5").textContent=""
+        document.querySelector(".v6").textContent=""
+
+      document.querySelector(".apagar").textContent="<< Voltar" 
+    }
+    function para23(){
+      document.getElementById("paralelo").style.marginTop = "2430px";
+      document.querySelector(".v1").textContent=""
+        document.querySelector(".v0").textContent=""
+        document.querySelector(".v2").textContent=""
+        document.querySelector(".v3").textContent=""
+        document.querySelector(".v4").textContent=""
+        document.querySelector(".v5").textContent=""
+        document.querySelector(".v6").textContent=""
+
+      document.querySelector(".apagar").textContent="<< Voltar" 
+    }
+    function para24(){
+      document.getElementById("paralelo").style.marginTop = "2580px";
+      document.querySelector(".v1").textContent=""
+        document.querySelector(".v0").textContent=""
+        document.querySelector(".v2").textContent=""
+        document.querySelector(".v3").textContent=""
+        document.querySelector(".v4").textContent=""
+        document.querySelector(".v5").textContent=""
+        document.querySelector(".v6").textContent=""
+
+      document.querySelector(".apagar").textContent="<< Voltar" 
+    }
+    
+
+
+
+    function apagar(){
+     
+        document.querySelector(".v1").textContent=""
+        document.querySelector(".v0").textContent=""
+        document.querySelector(".v2").textContent=""
+        document.querySelector(".v3").textContent=""
+        document.querySelector(".v4").textContent=""
+        document.querySelector(".v5").textContent=""
+        document.querySelector(".v6").textContent=""
+        document.querySelector(".apagar").textContent=""
+        document.querySelector(".voz").textContent=""
+
+
+
+    }
+    function voz(){
+      if(document.querySelector(".voz").textContent =="Voz"){
+       var mensagem = new SpeechSynthesisUtterance();
+      var vozes = speechSynthesis.getVoices();
+      mensagem.text = document.querySelector(".v1").textContent;
+       mensagem.voice = vozes[1]; 
+       mensagem.lang = "pt-BR";
+      mensagem.volume = 1; 
+       mensagem.rate = 1; 
+       mensagem.pitch = 0; 
+       
+      window.speechSynthesis.speak(mensagem);
+      document.querySelector(".voz").textContent="ovir Naum" 
+      }else{
+        var mensagem = new SpeechSynthesisUtterance();
+      var vozes = speechSynthesis.getVoices();
+      mensagem.text = document.querySelector(".v3").textContent;
+       mensagem.voice = vozes[1]; 
+       mensagem.lang = "pt-BR";
+      mensagem.volume = 1; 
+       mensagem.rate = 1; 
+       mensagem.pitch = 0; 
+       
+      window.speechSynthesis.speak(mensagem);
+      document.querySelector(".voz").textContent="Voz" 
+
+      }
+     
+    }
+  
+
+ 
+
+
+
+
+       </script>
+
+
+</body>
+</html>
