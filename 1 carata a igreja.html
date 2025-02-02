@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="icon" href="data:image/jpeg;base64,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">
+    
+    <title>1° Igreja Efésios</title>
+    <style>
+      body{
+        background-color: aqua;
+      }
+      marquee{
+            background-color: crimson;
+            color: aliceblue;
+            font-size: 25px;
+        }
+        .caixa{
+            display: block;
+            background-color: coral;
+            width: fit-content;
+        }
+        .resp{
+            position: absolute;
+            background-color: aliceblue;
+            width: fit-content;
+            display: none;
+            cursor: pointer;
+        }
+        .resp:hover{
+            color: rgb(58, 224, 7);
+        }
+        .h2{
+            display: none;
+        }
+        .tab{
+            
+            display: none;
+           
+            
+        }
+        .p1{
+            cursor: pointer;
+            color: crimson;
+        }
+        .p1:hover{
+            color: blue;
+        }
+        .p2{
+            cursor: pointer;
+            color: crimson;
+        }
+        .p2:hover{
+            color: blue;
+        }
+        .p3{
+            cursor: pointer;
+            color: crimson;
+        }
+        .p3:hover{
+            color: blue;
+        }
+        .p4{
+            cursor: pointer;
+            color: crimson;
+        }
+        .p4:hover{
+            color: blue;
+        }
+        .p5{
+            cursor: pointer;
+            color: crimson;
+        }
+        .p5:hover{
+            color: blue;
+        }
+        .p6{
+            cursor: pointer;
+            color: crimson;
+        }
+        .p6:hover{
+            color: blue;
+        }
+        .p7{
+            cursor: pointer;
+            color: crimson;
+        }
+        .p7:hover{
+            color: blue;
+        }
+        .p8{
+            cursor: pointer;
+            color: crimson;
+        }
+        .p8:hover{
+            color: blue;
+        }
+        .p9{
+            cursor: pointer;
+            color: crimson;
+        }
+        .p9:hover{
+            color: blue;
+        }
+        .p10{
+            cursor: pointer;
+            color: crimson;
+        }
+        .p10:hover{
+            color: blue;
+        }
+
+        .p11{
+            cursor: pointer;
+            color: crimson;
+        }
+        .p11:hover{
+            color: blue;
+        }
+        .p12{
+            cursor: pointer;
+            color: crimson;
+        }
+        .p12:hover{
+            color: blue;
+        }
+        .p13{
+            cursor: pointer;
+            color: crimson;
+        }
+        .p13:hover{
+            color: blue;
+        }
+        .p14{
+            cursor: pointer;
+            color: crimson;
+        }
+        .p14:hover{
+            color: blue;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="data">
+        <p>Data&nbsp;de Criação:&nbsp;&nbsp;17/12/2024</p>
+    </div>
+    <div align=center>Visualizações&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src='https://contador.s12.com.br/img-ZY0cd45YxbbZ6zwz-5.gif' border='0' alt='visitas'></a><script type='text/javascript' src='https://contador.s12.com.br/ad.js?id=ZY0cd45YxbbZ6zwz'></script></div>
+    <div class="visu">
+        
+    </div>
+    <br>
+       
+    <br>
+        <marquee  behavior="" direction="">Edu.App&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WhatsApp&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;81984242796 </marquee>
+    
+    <br>
+    <h1 class="h1"></h1>
+    <p class="apresent"></p>
+    <br>
+    <div class="caixa">
+        <br>
+        <p>Coloque seu Nome</p>
+        <input class="input" type="text"><button onclick="entrar()">Entrar</button>
+        <br>
+    </div>
+    <div>
+
+        <h2 class="h2">Apocalipse 2</h2><br>
+        <div class="resp">
+          <p class="result"></p>
+
+        </div>
+        <div class="tab">
+        <table >
+         <tr>
+            <td>
+                <p >1 Escreve ao anjo da igreja de Éfeso:</p>
+                
+            </td>
+            <td>
+                <p class="p1">( Isto diz aquele que tem na sua destra as sete estrelas,)</p>
+            </td>
+            <td>
+                <p class="p2">( que anda no meio dos sete castiçais de ouro:)</p>
+            </td>
+         </tr>
+        
+         
+        </table>
+    
+        <table>
+            <tr>
+            <td>
+                <p>onde fala essa profecia do cartiçais de ouro no velho tertamento?</p>
+            </td>
+            <td>
+                <p class="p4">
+                    (resposta)
+                </p>
+            </td>
+         </tr>
+        </table>
+        <table>
+            <tr>
+                <td>quem tava no meio dos cartiçais?</td>
+                <td>
+                    <p class="p5">(resposta)</p>
+                </td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td>
+                    <p>a primeira carta a igreja e vinculada aos selos e as trombetas.</p>
+                </td>
+                <td>
+                    <p>os selos ta</p>
+                </td>
+                <td>
+                    <p class="p6">(Apocalipse 6;1,2)</p>
+                </td>
+                <td>
+                    <p>as trombetas</p>
+                </td>
+                <td>
+                    <p class="p7">(Apocalipse 8;7)</p>
+                </td>
+            </tr>
+        </table> 
+           <table>
+             <tr>
+            <td>
+                <p>tem essa profecia no velho testamento?</p>
+            </td>
+            <td>
+                <p class="p3">(referencia)</p>
+            </td>
+         </tr>
+        </table>
+        <table>
+            <tr>
+                <td><p>o que tem a ver essa profecia de Daniel com os selo?</p></td>
+                <td><p  class="p8">(resposta)</p></td>
+                
+            
+            </tr>
+           </table>
+         <p>2 Conheço as tuas obras, e o teu trabalho, e a tua paciência, e que não podes sofrer os maus; e puseste à prova os que dizem ser apóstolos, e o não são, e tu os achaste mentirosos.</p>
+            <p>3 E sofreste, e tens paciência; e trabalhaste pelo meu nome, e não te cansaste.</p>
+            <p>4 Tenho, porém, contra ti que deixaste o teu primeiro amor.</p>
+            <p>5 Lembra-te, pois, de onde caíste, e arrepende-te, e pratica as primeiras obras; quando não, brevemente a ti virei, e tirarei do seu lugar o teu castiçal, se não te arrependeres.</p>
+            <p>6 Tens, porém, isto: que odeias as obras dos nicolaítas, as quais eu também odeio.</p>
+        <table>
+            <tr>
+                <td><p>Qual as obras do  nicolaítas?</p></td>
+                <td><p class="p9">( resposta )</p></td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td><p>segnificado de nicolaíta?</p></td>
+                <td><p class="p10">( resposta )</p></td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td><p>veio de quem essa seita?</p></td>
+                <td><p class="p11">(resposta)</p></td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td><p>de onde veio esse Nicolau?</p></td>
+                <td><p class="p12">(resposta)</p></td>
+                <td><p>foi escolhidos 7 para ser diácono</p></td>
+                <td><p class="p13">(lista)</p></td>
+            </tr>
+        </table>
+        <p>7 Quem tem ouvidos, ouça o que o Espírito diz às igrejas: Ao que vencer, dar-lhe-ei a comer da árvore da vida, que está no meio do paraíso de Deus.</p>
+         <table>
+            <tr>
+                <td><p>onde ta a arvore da vida?</p></td>
+                <td><p class="p14">(resposta)</p></td>
+            </tr>
+         </table>
+
+
+         <br><br>
+
+
+
+      </div>
+    </div>
+     
+
+
+
+
+    <script>
+        function entrar(){
+            let nome = document.querySelector(".input").value;
+            const visu=document.querySelector(".visu")
+            
+            if(nome==""){
+                alert("é obrigatório colocar seu nome!")
+            }else{
+
+               document.querySelector(".apresent").textContent="Bem vindo"+"   "+nome;
+               document.querySelector(".h1").textContent="A carta para igreja de Efésios " 
+              document.querySelector(".h2").style.display="block"
+              document.querySelector(".tab").style.display="block"
+               const input=document.querySelector(".input")
+               input.value="";
+               document.querySelector(".caixa").style.display="none"
+            
+        }
+            
+        
+        
+        }
+
+        let p1 = document.querySelector(".p1");
+        let resp=document.querySelector(".resp");
+        p1.addEventListener("mouseover",function(){
+            document.querySelector(".resp").style.marginTop="50px";
+            document.querySelector(".resp").style.display="block"
+            document.querySelector(".result").textContent="Apocalipse 1;20 O mistério das sete estrelas, que viste na minha destra, e dos sete castiçais de ouro. As sete estrelas são os anjos das sete igrejas, e os sete castiçais, que viste, são as sete igrejas.";
+
+        });
+        p1.addEventListener("mouseleave",function(){
+           document.querySelector(".resp").style.display="none"
+        
+        
+        });
+
+        let p2 = document.querySelector(".p2");
+        p2.addEventListener("mouseover",function(){
+            document.querySelector(".resp").style.marginTop="50px";
+            document.querySelector(".resp").style.display="block"
+            document.querySelector(".result").textContent="Apocalipse 1; 16 E ele tinha na sua destra sete estrelas; e da sua boca saía uma aguda espada de dois fios; e o seu rosto era como o sol, quando na sua força resplandece.";
+
+        });
+        p2.addEventListener("mouseleave",function(){
+         document.querySelector(".resp").style.display="none" 
+        
+    });
+    let p3 = document.querySelector(".p3");
+        p3.addEventListener("mouseover",function(){
+            document.querySelector(".resp").style.marginTop="350px";
+            document.querySelector(".resp").style.display="block"
+            document.querySelector(".result").textContent="Daniel 9;26 E depois das sessenta e duas semanas será cortado o Messias, mas não para si mesmo; e o povo do príncipe, que há de vir, destruirá a cidade e o santuário, e o seu fim será com uma inundação; e até ao fim haverá guerra; estão determinadas as assolações.  27 E ele firmará aliança com muitos por uma semana; e na metade da semana fará cessar o sacrifício e a oblação; e sobre a asa das abominações virá o assolador, e isso até à consumação; e o que está determinado será derramado sobre o assolador.";
+
+        });
+        p3.addEventListener("mouseleave",function(){
+         document.querySelector(".resp").style.display="none" 
+        
+    });
+
+    let p4 = document.querySelector(".p4");
+        p4.addEventListener("mouseover",function(){
+            document.querySelector(".resp").style.marginTop="100px";
+            document.querySelector(".resp").style.display="block"
+            document.querySelector(".result").textContent="(Zacarias 4   1 E o anjo que falava comigo voltou, e despertou-me, como a um homem que é despertado do seu sono,   2 E disse-me: Que vês? E eu disse: Olho, e eis que vejo um castiçal todo de ouro, e um vaso de azeite no seu topo, com as suas sete lâmpadas; e sete canudos, um para cada uma das lâmpadas que estão no seu topo.   3 E, por cima dele, duas oliveiras, uma à direita do vaso de azeite, e outra à sua esquerda.   4 E respondi, dizendo ao anjo que falava comigo: Senhor meu, que é isto?   5 Então respondeu o anjo que falava comigo, dizendo-me: Não sabes tu o que é isto? E eu disse: Não, senhor meu.   6 E respondeu-me, dizendo: Esta é a palavra do Senhor a Zorobabel, dizendo: Não por força nem por violência, mas sim pelo meu Espírito, diz o Senhor dos Exércitos.   7 Quem és tu, ó grande monte? Diante de Zorobabel tornar-te-ás uma campina; porque ele trará a pedra angular com aclamações: Graça, graça a ela.)";
+
+        });
+        p4.addEventListener("mouseleave",function(){
+         document.querySelector(".resp").style.display="none" 
+        
+    });
+        
+    let p5 = document.querySelector(".p5");
+        p5.addEventListener("mouseover",function(){
+            document.querySelector(".resp").style.marginTop="100px";
+            document.querySelector(".resp").style.display="block"
+            document.querySelector(".result").textContent="Apocalipse 1; 13 E no meio dos sete castiçais um semelhante ao Filho do homem, vestido até aos pés de uma roupa comprida, e cingido pelos peitos com um cinto de ouro.";
+
+        });
+        p5.addEventListener("mouseleave",function(){
+         document.querySelector(".resp").style.display="none" 
+        
+    });
+    let p6 = document.querySelector(".p6");
+        p6.addEventListener("mouseover",function(){
+            document.querySelector(".resp").style.marginTop="150px";
+            document.querySelector(".resp").style.display="block"
+            document.querySelector(".result").textContent="1 E, havendo o Cordeiro aberto um dos selos, olhei, e ouvi um dos quatro animais, que dizia como em voz de trovão: Vem, e vê.   2 E olhei, e eis um cavalo branco; e o que estava assentado sobre ele tinha um arco; e foi-lhe dada uma coroa, e saiu vitorioso, e para vencer.";
+
+        });
+        p6.addEventListener("mouseleave",function(){
+         document.querySelector(".resp").style.display="none" 
+        
+    });
+    let p7 = document.querySelector(".p7");
+        p7.addEventListener("mouseover",function(){
+            document.querySelector(".resp").style.marginTop="250px";
+            document.querySelector(".resp").style.display="block"
+            document.querySelector(".result").textContent="7 E o primeiro anjo tocou a sua trombeta, e houve saraiva e fogo misturado com sangue, e foram lançados na terra, que foi queimada na sua terça parte; queimou-se a terça parte das árvores, e toda a erva verde foi queimada.";
+
+        });
+        p7.addEventListener("mouseleave",function(){
+         document.querySelector(".resp").style.display="none" 
+        
+    });
+
+    let p8 = document.querySelector(".p8");
+        p8.addEventListener("mouseover",function(){
+            document.querySelector(".resp").style.marginTop="350px";
+            document.querySelector(".resp").style.display="block"
+            document.querySelector(".result").textContent="Daniel 12; 4 E tu, Daniel, encerra estas palavras e sela este livro, até ao fim do tempo; muitos correrão de uma parte para outra, e o conhecimento se multiplicará.";
+
+        });
+        p8.addEventListener("mouseleave",function(){
+         document.querySelector(".resp").style.display="none" 
+        
+    });
+
+    let p9 = document.querySelector(".p9");
+        p9.addEventListener("mouseover",function(){
+            document.querySelector(".resp").style.marginTop="450px";
+            
+            document.querySelector(".resp").style.display="block"
+            document.querySelector(".result").textContent=" O grupo denominado nicolaítas, participava de uma seita que procurava difundir ensinos contrários ao Evangelho e aos ensinamentos já estabelecidos no início da era cristã. O objetivo era corromper as doutrinas das igrejas e perverter os costumes já existentes.";
+
+        });
+        p9.addEventListener("mouseleave",function(){
+         document.querySelector(".resp").style.display="none" 
+        
+    });
+
+    let p10 = document.querySelector(".p10");
+        p10.addEventListener("mouseover",function(){
+            document.querySelector(".resp").style.marginTop="500px";
+            
+            document.querySelector(".resp").style.display="block"
+            document.querySelector(".result").textContent=" Nico significa conquistar  em grego, e laíta significa pessoas (ou povo) daí, a palavra pode significar conquistador de pessoas ou conquistador das pessoas.";
+
+        });
+        p10.addEventListener("mouseleave",function(){
+         document.querySelector(".resp").style.display="none" 
+        
+    });
+    let p11 = document.querySelector(".p11");
+        p11.addEventListener("mouseover",function(){
+            document.querySelector(".resp").style.marginTop="550px";
+            
+            document.querySelector(".resp").style.display="block"
+            document.querySelector(".result").textContent=" Nicolau de (Atos 6:5) é um nativo de Antioquia, um proselitista, isto é, um gentio que havia se tornado judeu; e depois de prosélito se converteu ao cristianismo.";
+
+        });
+        p11.addEventListener("mouseleave",function(){
+         document.querySelector(".resp").style.display="none" 
+        
+    });
+
+    let p12 = document.querySelector(".p12");
+        p12.addEventListener("mouseover",function(){
+            document.querySelector(".resp").style.marginTop="550px";
+            
+            document.querySelector(".resp").style.display="block"
+            document.querySelector(".result").textContent=" Atos 6; 3 Escolhei, pois, irmãos, dentre vós, sete homens de boa reputação, cheios do Espírito Santo e de sabedoria, aos quais constituamos sobre este importante negócio.   4 Mas nós perseveraremos na oração e no ministério da palavra.   5 E este parecer contentou a toda a multidão, e elegeram Estêvão, homem cheio de fé e do Espírito Santo, e Filipe, e Prócoro, e Nicanor, e Timão, e Parmenas e Nicolau, prosélito de Antioquia;";
+
+        });
+        p12.addEventListener("mouseleave",function(){
+         document.querySelector(".resp").style.display="none" 
+        
+    });
+
+    let p13 = document.querySelector(".p13");
+        p13.addEventListener("mouseover",function(){
+            document.querySelector(".resp").style.marginTop="600px";
+            
+            document.querySelector(".resp").style.display="block"
+            document.querySelector(".result").textContent=" 1°Estêvão   2°Filipe   3°Prócoro   4°Nicanor   5°Timão   6°Pármenas  7°Nicolau";
+
+        });
+        p13.addEventListener("mouseleave",function(){
+         document.querySelector(".resp").style.display="none" 
+        
+    });
+
+    let p14 = document.querySelector(".p14");
+        p14.addEventListener("mouseover",function(){
+            document.querySelector(".resp").style.marginTop="700px";
+            
+            document.querySelector(".resp").style.display="block"
+            document.querySelector(".result").textContent=" Em Gênesis 2:9, a árvore da vida é descrita como uma das árvores que Deus fez brotar no Jardim do Éden, juntamente com a árvore da ciência do bem e do mal.   Em Apocalipse 22:2, 10, a árvore da vida é descrita como uma árvore que produz frutos doze vezes por ano, e cujas folhas servem para curar os povos.";
+
+        });
+        p14.addEventListener("mouseleave",function(){
+         document.querySelector(".resp").style.display="none" 
+        
+    });
+
+        
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

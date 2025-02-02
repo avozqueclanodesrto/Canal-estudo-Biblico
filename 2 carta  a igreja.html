@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="data:image/jpeg;base64,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">
+    <title>2° igreja Esmina</title>
+    <style>
+        body{
+            background-color: aqua;
+        }
+        
+        .resp{
+            position: absolute;
+            background-color: aliceblue;
+            width: fit-content;
+            cursor: pointer;
+            display: none;
+        }
+        .resp:hover{
+            background-color: aliceblue;
+        }
+        .principal{
+            display: none;
+            width: fit-content;
+        }
+        .a1{
+            cursor: pointer;
+            color: crimson;
+        }
+        .a1:hover{
+            color: blue;
+        }
+        .a2{
+            cursor: pointer;
+            color: crimson;
+        }
+        .a2:hover{
+            color: blue;
+        }
+        .a3{
+            cursor: pointer;
+            color: crimson;
+        }
+        .a3:hover{
+            color: blue;
+        }
+        .a4{
+            cursor: pointer;
+            color: crimson;
+        }
+        .a4:hover{
+            color: blue;
+        }
+        .a5{
+            cursor: pointer;
+            color: crimson;
+        }
+        .a5:hover{
+            color: blue;
+        }
+        .a6{
+            cursor: pointer;
+            color: crimson;
+        }
+        .a6:hover{
+            color: blue;
+        }
+        .a7{
+            cursor: pointer;
+            color: crimson;
+        }
+        .a7:hover{
+            color: blue;
+        }
+        .a8{
+            cursor: pointer;
+            color: crimson;
+        }
+        .a8:hover{
+            color: blue;
+        }
+        .a9{
+            cursor: pointer;
+            color: crimson;
+        }
+        .a9:hover{
+            color: blue;
+        }
+        .a10{
+            cursor: pointer;
+            color: crimson;
+        }
+        .a10:hover{
+            color: blue;
+        }
+        .a11{
+            cursor: pointer;
+            color: crimson;
+        }
+        .a11:hover{
+            color: blue;
+        }
+        .a12{
+            cursor: pointer;
+            color: crimson;
+        }
+        .a12:hover{
+            color: blue;
+        }
+        .a13{
+            cursor: pointer;
+            color: crimson;
+        }
+        .a13:hover{
+            color: blue;
+        }
+        .a14{
+            cursor: pointer;
+            color: crimson;
+        }
+        .a14:hover{
+            color: blue;
+        }
+        .a15{
+            cursor: pointer;
+            color: crimson;
+        }
+        .a15:hover{
+            color: blue;
+        }
+        .a16{
+            cursor: pointer;
+            color: crimson;
+        }
+        .a16:hover{
+            color: blue;
+        }
+        .a17{
+            cursor: pointer;
+            color: crimson;
+        }
+        .a17:hover{
+            color: blue;
+        }
+        .a18{
+            cursor: pointer;
+            color: crimson;
+        }
+        .a18:hover{
+            color: blue;
+        }
+        .a19{
+            cursor: pointer;
+            color: crimson;
+        }
+        .a19:hover{
+            color: blue;
+        }
+        marquee{
+            
+            background-color: crimson;
+            font-size: 25px;
+            color: aliceblue;
+        }
+    </style>
+
+</head>
+<body>
+    <br>
+    <p>Data de criação: 19/12/2024</p>
+    <div align=center>Visualizações&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src='https://contador.s12.com.br/img-dY9w7ZDaC5x2316A-79.gif' border='0' alt='contador grátis'></a><script type='text/javascript' src='https://contador.s12.com.br/ad.js?id=dY9w7ZDaC5x2316A'></script></div>
+    <br>
+      <marquee class="marq"></marquee>
+    <br>
+    <h1 class="h1"></h1>
+    <p class="nome"></p>
+
+    <div class="caixa" align="center"><br>
+        <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Qual o seu nome?</p>
+        <input class="input" type="text">
+        <button onclick="entrar()">Entrar</button>
+    </div>
+    <div class="resp">
+       <br>
+       <p class="result"> </p>
+       <br>
+    </div>
+    <div class="principal">
+       
+                    <p>8 E ao anjo da igreja em Esmirna, escreve: Isto diz o primeiro e o último, que foi morto, e reviveu:</p>
+                    <p>primeiro e o último; faz ligação para <a class="a1">(Apocalipse 22;13)</a></p>
+                    <p>foi morto, e reviveu; faz ligação para <a class="a2">(1 Coríntios 15:20)</a></p>
+                    <p>e também <a class="a3">(Romanos 6:4)</a></p>
+                    <p>e também <a class="a4">(Romanos 14:9)</a></p>
+                    <p>onde tem a profecia que Jesus iria ser morto? <a class="a5">(Isaías 53:5–9)</a></p>
+                    <p>e também <a class="a6">(oséias 6~2,3)</a></p>
+                     <p>e também Foi no "terceiro dia" que Deus fez a terra estéril produzir fruto em Gênesis 1:11-13, uma boa figura das "primícias" ou "primeiros frutos" que é Cristo ressuscitado.</p>
+                    <p>também  testifica em <a class="a7">(Oséias 1;10,11)</a></p>
+                     <p>9 Conheço as tuas obras, e tribulação, e pobreza (mas tu és rico), e a blasfêmia dos que se dizem judeus, e não o são, mas são a sinagoga de Satanás.</p>
+                    <p>de que obras é essa que foi dita no inicio do versiculo 9? <a class="a8">(Gálatas 5;22)</a></p>
+                    <p>vemos tambem o que o Messias falou em <a class="a9">(João 14;12)</a></p>
+                     <p>que testifica a obra que o Messias deu aos seus discípulos <a class="a10">(Marcos 16;15)</a></p>
+                    <p>também ele detalha quem é discípulo dele em <a class="a11">(João 15;7,8)</a></p>
+                    <p>que tribulação é essa? <a class="a12">(Mateus 24;21,22)</a></p>
+                     <p>e também confirma em <a class="a13">(Romanos 5;3~5)</a></p>
+                    <p>tem essa profecia no velho testamento? <a class="a14">(Daniel 12;1)</a></p>
+                    <p>também tem em <a class="a15">(Jeremias 30:7)</a></p>
+                    <p>10 Nada temas das coisas que hás de padecer. Eis que o diabo lançará alguns de vós na prisão, para que sejais tentados; e tereis uma tribulação de dez dias. Sê fiel até à morte, e dar-te-ei a coroa da vida. </p>
+                    <p>a promessa da Coroa da vida <a class="a16">(Tiago 1:12)</a></p>
+                    <p>no caso tem que ser fiel ate a morte, de quem se refere que vai morrer? <a class="a17">(Apocalipse 11;7)</a></p>
+                    <p>11 Quem tem ouvidos, ouça o que o Espírito diz às igrejas: O que vencer não receberá o dano da segunda morte. </p>
+                    <p>A segunda morte é uma advertência para os incrédulos buscarem a salvação que Jesus Cristo oferece. O julgamento vindouro também deve desafiar os crentes a compartilhar a sua fé.</p>
+                    <p>o que é a segunda morte? <a class="a18">(Apocalipse 20;14)</a></p>
+                    <p>também vemos a resposta em <a class="a19">(Apocalipse 21;8)</a></p>
+
+
+    
+    </div>
+    <br><br>
+
+
+
+
+
+    <script>
+        
+        function entrar(){
+            let nome = document.querySelector(".input").value
+
+            if(nome==""){
+            alert("Olá é Obrigatório colocar o neme")
+        }else{
+           document.querySelector(".principal").style.display="block" 
+           document.querySelector(".marq").textContent="Edu.App   "+"    "+"WhatsApp   "+ "     "+"81984242796"
+           document.querySelector(".h1").textContent="Carta á 2° Igreja Esmina Apocalipse 2"
+           document.querySelector(".nome").textContent="Olá  "+nome+" "+"Seja Bem Vindo"
+          document.querySelector(".caixa").style.display="none"
+           const input=document.querySelector(".input")
+           input.value="" 
+        }
+
+        }
+
+        let a1= document.querySelector(".a1")
+        let resp=document.querySelector(".resp")
+        a1.addEventListener("mouseover",function(){
+            resp.style.display="block"
+            resp.style.marginTop="30px"
+            document.querySelector(".result").textContent="13 Eu sou o Alfa e o Ômega, o princípio e o fim, o primeiro e o derradeiro."
+        })
+        a1.addEventListener("mouseleave",function(){
+            document.querySelector(".result").textContent=""
+            resp.style.display="none"
+
+        })
+
+        let a2= document.querySelector(".a2")
+        
+        a2.addEventListener("mouseover",function(){
+            resp.style.display="block"
+            resp.style.marginTop="40px"
+            document.querySelector(".result").textContent="Mas de fato Cristo ressuscitou dentre os mortos, e foi feito as primícias dos que dormem."
+        })
+        a2.addEventListener("mouseleave",function(){
+            document.querySelector(".result").textContent=""
+            resp.style.display="none"
+
+        })
+
+        let a3= document.querySelector(".a3")
+        
+        a3.addEventListener("mouseover",function(){
+            resp.style.display="block"
+            resp.style.marginTop="50px"
+            document.querySelector(".result").textContent="De sorte que fomos sepultados com ele pelo batismo na morte; para que, como Cristo foi ressuscitado dentre os mortos, pela glória do Pai, assim andemos nós também em novidade de vida."
+        })
+        a3.addEventListener("mouseleave",function(){
+            document.querySelector(".result").textContent=""
+            resp.style.display="none"
+
+        })
+        let a4= document.querySelector(".a4")
+        
+        a4.addEventListener("mouseover",function(){
+            resp.style.display="block"
+            resp.style.marginTop="50px"
+            document.querySelector(".result").textContent="Porque foi para isto que morreu Cristo, e ressurgiu, e tornou a viver, para ser Senhor, tanto dos mortos, como dos vivos."
+        })
+        a4.addEventListener("mouseleave",function(){
+            document.querySelector(".result").textContent=""
+            resp.style.display="none"
+
+        })
+        let a5= document.querySelector(".a5")
+        
+        a5.addEventListener("mouseover",function(){
+            resp.style.display="block"
+            resp.style.marginTop="80px"
+            document.querySelector(".result").textContent="Mas ele foi traspassado por causa das nossas transgressões e esmagado por causa das nossas iniquidades; o castigo que nos traz a paz estava sobre ele, e pelas suas feridas fomos sarados. 6Todos nós andávamos desgarrados como ovelhas; cada um se desviava pelo seu próprio caminho, mas o Senhor fez cair sobre ele a iniquidade de todos nós. 7Ele foi oprimido e humilhado, mas não abriu a boca. Como cordeiro foi levado ao matadouro e, como ovelha mudadiante dos seus tosquiadores,ele não abriu a boca."
+        })
+        a5.addEventListener("mouseleave",function(){
+            document.querySelector(".result").textContent=""
+            resp.style.display="none"
+
+        })
+        let a6= document.querySelector(".a6")
+        
+        a6.addEventListener("mouseover",function(){
+            resp.style.display="block"
+            resp.style.marginTop="140px"
+            document.querySelector(".result").textContent="2 Depois de dois dias nos dará a vida; ao terceiro dia nos ressuscitará, e viveremos diante dele. 3 Então conheçamos, e prossigamos em conhecer ao Senhor; a sua saída, como a alva, é certa; e ele a nós virá como a chuva, como chuva serôdia que rega a terra."
+        })
+        a6.addEventListener("mouseleave",function(){
+            document.querySelector(".result").textContent=""
+            resp.style.display="none"
+
+        })
+        let a7= document.querySelector(".a7")
+        
+        a7.addEventListener("mouseover",function(){
+            resp.style.display="block"
+            resp.style.marginTop="180px"
+            document.querySelector(".result").textContent="10 Todavia o número dos filhos de Israel será como a areia do mar, que não pode medir-se nem contar-se; e acontecerá que no lugar onde se lhes dizia: Vós não sois meu povo, se lhes dirá: Vós sois filhos do Deus vivo. 11 E os filhos de Judá e os filhos de Israel juntos se congregarão, e constituirão sobre si uma só cabeça, e subirão da terra; porque grande será o dia de Jizreel."
+        })
+        a7.addEventListener("mouseleave",function(){
+            document.querySelector(".result").textContent=""
+            resp.style.display="none"
+
+        })
+        let a8= document.querySelector(".a8")
+        
+        a8.addEventListener("mouseover",function(){
+            resp.style.display="block"
+            resp.style.marginTop="220px"
+            document.querySelector(".result").textContent="22 Mas o fruto do Espírito é: amor, gozo, paz, longanimidade, benignidade, bondade, fé, mansidão, temperança."
+        })
+        a8.addEventListener("mouseleave",function(){
+            document.querySelector(".result").textContent=""
+            resp.style.display="none"
+
+        })
+        let a9= document.querySelector(".a9")
+        
+        a9.addEventListener("mouseover",function(){
+            resp.style.display="block"
+            resp.style.marginTop="260px"
+            document.querySelector(".result").textContent="12 Na verdade, na verdade vos digo que aquele que crê em mim também fará as obras que eu faço, e as fará maiores do que estas, porque eu vou para meu Pai."
+        })
+        a9.addEventListener("mouseleave",function(){
+            document.querySelector(".result").textContent=""
+            resp.style.display="none"
+
+        })
+        let a10= document.querySelector(".a10")
+        
+        a10.addEventListener("mouseover",function(){
+            resp.style.display="block"
+            resp.style.marginTop="300px"
+            document.querySelector(".result").textContent="15 E disse-lhes: Ide por todo omundo, pregai o evangelho a toda criatura."
+        })
+        a10.addEventListener("mouseleave",function(){
+            document.querySelector(".result").textContent=""
+            resp.style.display="none"
+
+        })
+        let a11= document.querySelector(".a11")
+        
+        a11.addEventListener("mouseover",function(){
+            resp.style.display="block"
+            resp.style.marginTop="340px"
+            document.querySelector(".result").textContent="7 Se vós estiverdes em mim, e as minhas palavras estiverem em vós, pedireis tudo o que quiserdes, e vos será feito. 8 Nisto é glorificado meu Pai, que deis muito fruto; e assim sereis meus discípulos."
+        })
+        a11.addEventListener("mouseleave",function(){
+            document.querySelector(".result").textContent=""
+            resp.style.display="none"
+
+        })
+        let a12= document.querySelector(".a12")
+        
+        a12.addEventListener("mouseover",function(){
+            resp.style.display="block"
+            resp.style.marginTop="370px"
+            document.querySelector(".result").textContent="21 Porque haverá então grande aflição, como nunca houve desde o princípio do mundo até agora, nem tampouco há de haver. 22 E, se aqueles dias não fossem abreviados, nenhuma carne se salvaria; mas por causa dos escolhidos serão abreviados aqueles dias."
+        })
+        a12.addEventListener("mouseleave",function(){
+            document.querySelector(".result").textContent=""
+            resp.style.display="none"
+
+        })
+        let a13= document.querySelector(".a13")
+        
+        a13.addEventListener("mouseover",function(){
+            resp.style.display="block"
+            resp.style.marginTop="400px"
+            document.querySelector(".result").textContent="3 E não somente isto, mas também nos gloriamos nas tribulações; sabendo que a tribulação produz a paciência, 4 E a paciência a experiência, e a experiência a esperança. 5 E a esperança não traz confusão, porquanto o amor de Deus está derramado em nossos corações pelo Espírito Santo que nos foi dado."
+        })
+        a13.addEventListener("mouseleave",function(){
+            document.querySelector(".result").textContent=""
+            resp.style.display="none"
+
+        })
+        let a14= document.querySelector(".a14")
+        
+        a14.addEventListener("mouseover",function(){
+            resp.style.display="block"
+            resp.style.marginTop="430px"
+            document.querySelector(".result").textContent="1 E naquele tempo se levantará Miguel, o grande príncipe, que se levanta a favor dos filhos do teu povo, e haverá um tempo de angústia, qual nunca houve, desde que houve nação até àquele tempo; mas naquele tempo livrar-se-á o teu povo, todo aquele que for achado escrito no livro."
+        })
+        a14.addEventListener("mouseleave",function(){
+            document.querySelector(".result").textContent=""
+            resp.style.display="none"
+
+        })
+        let a15= document.querySelector(".a15")
+        
+        a15.addEventListener("mouseover",function(){
+            resp.style.display="block"
+            resp.style.marginTop="470px"
+            document.querySelector(".result").textContent="Como será terrível aquele dia!Sem comparação!Será tempo de angústia para Jacó;mas ele será salvo."
+        })
+        a15.addEventListener("mouseleave",function(){
+            document.querySelector(".result").textContent=""
+            resp.style.display="none"
+
+        })
+        let a16= document.querySelector(".a16")
+        
+        a16.addEventListener("mouseover",function(){
+            resp.style.display="block"
+            resp.style.marginTop="500px"
+            document.querySelector(".result").textContent="Bem-aventurado o homem que suporta a tentação; porque, quando for posto à prova, receberá a coroa da vida, a qual o Senhor prometeu aos que o amam."
+        })
+        a16.addEventListener("mouseleave",function(){
+            document.querySelector(".result").textContent=""
+            resp.style.display="none"
+
+        })
+        let a17= document.querySelector(".a17")
+        
+        a17.addEventListener("mouseover",function(){
+            resp.style.display="block"
+            resp.style.marginTop="530px"
+            document.querySelector(".result").textContent="7 E, quando acabarem o seu testemunho, a besta que sobe do abismo lhes fará guerra, e os vencerá, e os matará."
+        })
+        a17.addEventListener("mouseleave",function(){
+            document.querySelector(".result").textContent=""
+            resp.style.display="none"
+
+        })
+        let a18= document.querySelector(".a18")
+        
+        a18.addEventListener("mouseover",function(){
+            resp.style.display="block"
+            resp.style.marginTop="570px"
+            document.querySelector(".result").textContent="E a morte e o inferno foram lançados no lago de fogo. Esta é a segunda morte."
+        })
+        a18.addEventListener("mouseleave",function(){
+            document.querySelector(".result").textContent=""
+            resp.style.display="none"
+
+        })
+        let a19= document.querySelector(".a19")
+        
+        a19.addEventListener("mouseover",function(){
+            resp.style.display="block"
+            resp.style.marginTop="600px"
+            document.querySelector(".result").textContent="Mas os covardes, os incrédulos, os depravados, os assassinos, os que cometem imoralidade sexual, os que praticam feitiçaria, os idólatras e todos os mentirosos — o lugar deles será no lago de fogo que arde com enxofre. Esta é a segunda morte"
+        })
+        a19.addEventListener("mouseleave",function(){
+            document.querySelector(".result").textContent=""
+            resp.style.display="none"
+
+        })    
+        
+    </script>
+    
+</body>
+</html>
