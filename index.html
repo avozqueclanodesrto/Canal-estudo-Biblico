@@ -273,9 +273,14 @@ body{
 }
 .btn4{
  margin-left: 5px;
+ display: none;
  }
  .btn5{
+    display: none;
   margin-left: 130px;
+ }   
+ .h10{
+    display: none;
  }
 .Quiz{
     display: none;
@@ -396,7 +401,7 @@ body{
      
      <div class="palavra">
 
-              <h1>Jeremias 18</h1>
+              <h1 class="h10">Jeremias 18</h1>
 
         <img class="img5" src="" alt="">
        <audio class="audio5" src=""></audio>
@@ -1428,6 +1433,9 @@ body{
       setInterval(() => {
               if (devoci==7) {
                   document.querySelector(".palavra").style.display="block"
+                  document.querySelector(".btn4").style.display="block"
+                  document.querySelector(".btn5").style.display="block"
+                  document.querySelector(".h10").style.display="block"
                   
                   devoci=0
                   
@@ -1485,14 +1493,15 @@ body{
             
            if (cont==23) {
             document.querySelector(".palavra").style.display="none"
+            document.querySelector(".h10").style.display="none"
+            document.querySelector(".btn4").style.display="none"
+            document.querySelector(".btn5").style.display="none"
             
            } else {
             cont++
             
            }
-           if(cont==22){
-             btn5.innerHTML="Finalizar"   
-            }
+           
            btn5.innerHTML="Proximo"
            audio5.src=music[cont] 
            audio5.play()
