@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="cartical.jpg" type="image/x-icon">
     <link rel="shortcut icon" href="https://avozqueclanodesrto.github.io/imagem/biblia-icon.png" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
@@ -12,7 +13,7 @@
     padding: 0;
 }
 body{
-    background-image: url("BR-wp3.jpg");
+    background-image: url("https://avozqueclanodesrto.github.io/Canal-estudo-Biblico/BR-wp3.jpg");
 }
 .barra{
     background-color: rgb(238, 15, 15);
@@ -265,18 +266,13 @@ body{
     color: gold;
 }
 .palavra{
-    display: none;  
+  display: none;
  margin-top: 10%;
  margin-left: 10%;
  width: 270px;
  height: 350px;
 }
-.btn4{
- margin-left: 5px;
- }
- .btn5{
-  margin-left: 130px;
- }
+
 .Quiz{
     display: none;
     background-color: rgb(43, 235, 18);
@@ -297,12 +293,18 @@ body{
     padding: 10px;
     margin-top: 10px;
 }
+h1{
+    color: aliceblue;
+}
+.h2{
+    color: aliceblue;
+}
     </style>    
 
 </head>
 <body>
- <div align=center>Visualizações &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src='https://contador.s12.com.br/img-89C7c5yDwDw2dBYA-6.gif' border='0' alt='contador de visitas gratis'></a><script type='text/javascript' src='https://contador.s12.com.br/ad.js?id=89C7c5yDwDw2dBYA'></script></div>
-
+   <!--- <div align=center>Visualizações &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src='https://contador.s12.com.br/img-89C7c5yDwDw2dBYA-6.gif' border='0' alt='contador de visitas gratis'></a><script type='text/javascript' src='https://contador.s12.com.br/ad.js?id=89C7c5yDwDw2dBYA'></script></div>
+    -->
     <br>
         <marquee behavior="" direction="">Edu.App&nbsp;&nbsp;&nbsp;WhatsApp&nbsp;&nbsp;&nbsp;81984242796</marquee>
     <br>
@@ -394,16 +396,16 @@ body{
 
 
      
-   <div class="palavra">
-          <h1>Isaias 43</h1>
-          <h2 class="h2"></h2>
-        <audio class="audio" src=""></audio>
-        <button class="volta">Iniciar</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <button class="proximo">Proximo</button>
+     <div class="palavra">
+        <h1>Isaias 43</h1>
+        <h2 class="h2"></h2>
+      <audio class="audio5" src=""></audio>
+      <button class="volta">Iniciar</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <button class="proximo">Proximo</button>
 
 
 
-      </div>
+    </div>
 
 
 
@@ -441,8 +443,8 @@ body{
   /*23*/"boa noite",
 
   ]
-  var image=[
-          /*1*/" ",
+  var letra=[
+            /*1*/" ",
             /*2*/"1;  Mas agora, assim diz o SENHOR que te criou, ó Jacó, e que te formou, ó Israel: Não temas, porque eu te remi; chamei-te pelo teu nome, tu és meu. ",
             /*3*/" 2;  Quando passares pelas águas estarei contigo, e quando pelos rios, eles não te submergirão; quando passares pelo fogo, não te queimarás, nem a chama arderá em ti.",
             /*4*/"3;  Porque eu sou o Senhor teu Deus, o Santo de Israel, o teu Salvador; dei o Egito por teu resgate, a Etiópia e a Seba em teu lugar. ",
@@ -471,11 +473,10 @@ body{
             /*27*/"26;  Faze-me lembrar; entremos juntos em juízo; conta tu as tuas razões, para que te possas justificar. ",
             /*28*/"27;  Teu primeiro pai pecou, e os teus intérpretes prevaricaram contra mim. ",
             /*29*/"28;  Por isso profanei os príncipes do santuário; e entreguei Jacó ao anátema, e Israel ao opróbrio. ",
-        
 
     ]
     var fala=[
-        "",
+    "",
                 /**/"https://avozqueclanodesrto.github.io/som/isaias43/1.mp3",
                 /**/"https://avozqueclanodesrto.github.io/som/isaias43/2.mp3",
                 /**/"https://avozqueclanodesrto.github.io/som/isaias43/3.mp3",
@@ -1468,48 +1469,48 @@ body{
 
      // devocional em audio e imagem
 
-      var cont=0;
-           var volta = document.querySelector(".volta")
-           var proximo = document.querySelector(".proximo")
-           var h2 = document.querySelector(".h2")
-           var audio = document.querySelector(".audio")
+     var h2 = document.querySelector(".h2")
+        var volta = document.querySelector(".volta")
+        var proximo = document.querySelector(".proximo")
+        var cont =0
+         var audio5 = document.querySelector(".audio5")
+         var Finalizar=0
 
-
-
-
-
-
-
-           volta.addEventListener("click", () =>{
+         volta.addEventListener("click", () => {
             volta.innerHTML="Voltar"
-
-
-              if (cont==0) {
+           if (cont==0) {
             
-              } else {
-                cont--
-               h2.textContent=letra[cont]
-              audio.src=fala[cont]
-              audio.play()
-              
-            }
+           } else {
+            cont--
+            
+           }
+          audio5.src=fala[cont] 
+           audio5.play()
 
-           })
+        })
+         
+        proximo.addEventListener("click", () => {
 
-           proximo.addEventListener("click", () => {
-                    
-                  if (cont==29) {
-                    h2.innerHTML="Final"
-                  } else {
-                    cont++
+            
+           if (cont==52) {
+            proximo.innerHTML="Finalizar"
+            Finalizar++
+           } else {
+            cont++
+            
+           }
+           audio5.src=fala[cont] 
+           audio5.play()
 
-                    h2.textContent=letra[cont]
-                    audio.src=fala[cont]
-                   audio.play()
-                  }
 
-                  
-           })
+        })
+
+       setInterval(() => {
+        if(Finalizar==2){
+            document.querySelector(".palavra").style.display="none"
+        }
+        h2.textContent =letra[cont]
+       }, 10);
 
 
 
