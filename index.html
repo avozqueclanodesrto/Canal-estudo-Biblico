@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="cartical.jpg" type="image/x-icon">
+    
     <link rel="shortcut icon" href="https://avozqueclanodesrto.github.io/imagem/biblia-icon.png" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
@@ -299,6 +299,12 @@ h1{
 .h2{
     color: aliceblue;
 }
+.loading{
+            margin-top: 17%;
+            margin-left: 20%;
+        }
+
+
     </style>    
 
 </head>
@@ -309,7 +315,12 @@ h1{
         <marquee behavior="" direction="">Edu.App&nbsp;&nbsp;&nbsp;WhatsApp&nbsp;&nbsp;&nbsp;81984242796</marquee>
     <br>
       <p class="barra"></p>
-      
+      <div class="login">
+        <p class="plog"> Coloque seu nome</p>
+        <br>
+        <input class="input" type="text"><br><br>
+        <button class="btn" onclick="entre()">Entrar</button>
+    </div>
       <br>
       <h1 class="h1" align="center"></h1>
     <br>
@@ -320,12 +331,8 @@ h1{
             </td>
         </tr>
     </div>
-    <div class="login">
-        <p class="plog"> Coloque seu nome</p>
-        <br>
-        <input class="input" type="text"><br><br>
-        <button class="btn" onclick="entre()">Entrar</button>
-    </div>
+    <iframe class="loading" src="" frameborder="0"></iframe>
+    
     <div class="estudo">
         <a href="1 carata a igreja.html">primeira carta </a><br>
         <a href="2 carta  a igreja.html">segunda carta </a><br>
@@ -512,22 +519,27 @@ h1{
  
   
   
-  
+    var gif = document.querySelector(".loading")
   
   var data = new Date()
   var hora = data.getHours()
-  
+  cont=0
   
   function entre(){
-  
-  var input = document.querySelector(".input").value
+    gif.src="sample.gif"
+    document.querySelector(".login").style.display="none"
+   var loading = setInterval(() => { 
+    if (cont==100) {
+      gif.src=""
+
+         var input = document.querySelector(".input").value
       if (input=="") {
   
         alert("é obrigatorio colocar o seu nome")
           
       } else {
         h1.innerHTML="seja muito bem vindo"+ "   "+input
-         document.querySelector(".login").style.display="none"
+         
         document.querySelector(".menu").style.display="block" 
         if ('speechSynthesis' in window) {
               const utterance = new SpeechSynthesisUtterance( saudasao[hora]  +input +"   "+"seja muito bem vindo ao  canal estudo bíblico" );
@@ -616,6 +628,24 @@ h1{
           }, 5000);
       
       }
+
+
+
+
+      clearInterval(loading)
+      
+        
+    } else {
+       
+    }
+    
+      cont++ 
+        
+      }, 200);
+    
+    /* fim de loadig*/
+  
+ 
        // JS
   
   
