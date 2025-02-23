@@ -3,96 +3,97 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="cartical.jpg" type="image/x-icon">
     <link rel="shortcut icon" href="https://avozqueclanodesrto.github.io/imagem/biblia-icon.png" type="image/x-icon">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canal Estudo Bíblico</title>
     <style>
         *{
-    margin: 0;
-    padding: 0;
-}
-body{
-    background-image: url("https://avozqueclanodesrto.github.io/Canal-estudo-Biblico/BR-wp3.jpg");
-}
-.barra{
-    background-color: rgb(238, 15, 15);
-    width: 1020;
-    height: 17px;
-}
-.menu{
-    display: none;
-  font-size: 25px;
-  background-color: rgb(226, 14, 14);
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            background-image: url("https://avozqueclanodesrto.github.io/Canal-estudo-Biblico/BR-wp3.jpg");
+        }
+        .login{
+            position: absolute;
+            margin-top:17%;
+            margin-left: 20%;
+            padding: 20px;
+            width: 220px;
+            border-radius: 15px;
+            background-color: gold;
+        }
+        .h2{ 
+            position: fixed;
+            font-size: 25px;
+            font-family: Arial, Helvetica, sans-serif;
 
-}
-.a1{
-    cursor: pointer;
-    color: aliceblue;
-}
-.a1:hover{
-    color: gold;
-}
-.a2{
-    cursor: pointer;
-    color: aliceblue;
-}
-.a2:hover{
-    color: gold;
-}
-.a3{
-    cursor: pointer;
-    color: aliceblue;
-}
-.a3:hover{
-    color: gold;
-}
-.login{
-    background-color: chartreuse;
-    width: fit-content;
-    height: fit-content;
-    padding: 10px;
-    border-radius: 10px;
-    margin-top: 15%;
-    margin-left: 25%;
-}
-.plog{
-    font-size: 20px;
-}
-.input{
-    font-size: 20px;
-}
-.btn{
-    cursor: pointer;
-    font-size: 20px;
-    padding: 10px;
-    border-radius: 10px;
-}
-.harpa{
-    display: none;
-    cursor: pointer;
-    width: fit-content;
-    height: fit-content;
-    padding: 10px;
-    border-radius: 12px;
-    background-color: chartreuse;
-    margin-left: 280px;
-    margin-top: 2%;
-
-
-}
-.som {
-    display: none;
-    background-image: url("mar.gif");
-    width: 250px;
-    height: 300px;
-    margin-left: 15%;
-}
-.audio{
-    margin-top: 250px;
-    margin-left: -25px;
-}
-.l1{
+        }
+        .caixa{
+            background-color: rgb(53, 128, 128);
+            
+            width: fit-content;
+            padding: 5px;
+            border-radius: 10px;
+        }
+        .menu {
+          display: none;
+         position: fixed;
+         right: 0;
+         top: 15%;
+          width: 8em;
+          margin-top: 3%;
+          background-color: rgb(247, 29, 29);
+          height: fit-content;
+          margin: 10px;
+          padding: 10px;
+          width: 100%;
+        }
+        .home{
+            cursor: pointer;
+            height: fit-content;
+            font-size: 20px;
+            margin-left: 10px;
+            width: fit-content;
+            margin-top: -5px;
+            border-radius: 15px;
+            padding: 10px;
+            background-color: rgb(247, 29, 29);
+        }
+        .home:hover{
+            background-color: gold;
+        }
+        .estudo{
+            display: none;
+            position: absolute;
+            margin-top: 120px;
+            width: fit-content;
+            background-color: chartreuse;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        .Quiz{
+            display: none;
+            position: absolute;
+            background-color: chartreuse;
+            margin-top: 110px;
+            margin-left: 130px;
+            width: fit-content;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        .harpa{
+            display: none;
+            position: absolute;
+            margin-top: 110px;
+            margin-left: 200px;
+            background-color: chartreuse;
+            width: fit-content;
+            padding: 10px;
+            border-radius: 10px;
+        }
+        .l1{
     cursor: pointer;
     color: black;
 }
@@ -260,75 +261,50 @@ body{
 .l24:hover{
     color: gold;
 }
-.teset{
-    margin-top: 12px;
-    margin-left: 15px;
-    color: gold;
-}
-.palavra{
-  display: none;
- margin-top: 10%;
- margin-left: 10%;
- width: 270px;
- height: 350px;
-}
-
-.Quiz{
+.som{
     display: none;
-    background-color: rgb(43, 235, 18);
-    cursor: pointer;
-    width: fit-content;
-    height: fit-content;
-    padding: 10px;
-    border-radius: 10px;
-    margin-top: 2%;
+    background-image: url("mar.gif");
+    width: 250px;
+    height: 300px;
+    margin-top: 25%;
     margin-left: 15%;
 }
-.estudo{
+.audio{
+    margin-top: 260px;
+    margin-left: -5%;
+}
+.palavra{
     display: none;
-    background-color: chartreuse;
+    margin-top: 20%;
+    margin-left: 15%;
+    padding: 15px;
     width: fit-content;
     height: fit-content;
-    border-radius: 10px;
-    padding: 10px;
-    margin-top: 10px;
+    background-color: aqua;
+    border-radius: 15px;
 }
-h1{
-    color: aliceblue;
-}
-.h2{
-    color: aliceblue;
+.visu{
+    position: fixed;
+          
 }
 
 
 
-    </style>    
-
+    </style>
+    
 </head>
 <body>
-    <div align=center>Visualizações &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src='https://contador.s12.com.br/img-89C7c5yDwDw2dBYA-6.gif' border='0' alt='contador de visitas gratis'></a><script type='text/javascript' src='https://contador.s12.com.br/ad.js?id=89C7c5yDwDw2dBYA'></script></div>
-    
+    <div class="visu" align=center>Visualizações &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<img src='https://contador.s12.com.br/img-89C7c5yDwDw2dBYA-6.gif' border='0' alt='contador de visitas gratis'></a><script type='text/javascript' src='https://contador.s12.com.br/ad.js?id=89C7c5yDwDw2dBYA'></script></div>
     <br>
-        <marquee behavior="" direction="">Edu.App&nbsp;&nbsp;&nbsp;WhatsApp&nbsp;&nbsp;&nbsp;81984242796</marquee>
-    <br>
-      <p class="barra"></p>
-      
-      <br>
-      <h1 class="h1" align="center"></h1>
-    <br>
+    <marquee class="h2" behavior="" direction=""></marquee><br>
     <div class="menu">
         <tr>
             <td>
-             &nbsp; &nbsp; &nbsp;   <a class="a1" href="#">Estudo</a>&nbsp; &nbsp; &nbsp;<a class="a2" href="#">Quiz Bíblico</a>&nbsp; &nbsp; &nbsp;<a class="a3" href="#"> 24 Hinos da harpa</a>
+
+               <button class="home"id="img1">Estudos</button> &nbsp;&nbsp;<button class="home" id="img2" >Quiz</button> &nbsp;&nbsp;<button class="home" id="img3">Hinos</button>
             </td>
         </tr>
-    </div>
-    
-    <div class="login">
-        <p class="plog"> Coloque seu nome</p>
-        <br>
-        <input class="input" type="text"><br><br>
-        <button class="btn" onclick="entre()">Entrar</button>
+
     </div>
     <div class="estudo">
         <a href="1 carata a igreja.html">primeira carta </a><br>
@@ -342,85 +318,77 @@ h1{
          <a href="estudo Isaias 29.html">estudo Isaias 29</a><br>
        <br><br><br> <a href="https://avozqueclanodesrto.github.io/Canal-estudo-Biblico-Bonos/">Bonos</a>
 
+   
     </div>
-
-
-
-
-
-
-
-
-    <div class=" Quiz">
+    <br>
+    <div class="Quiz">
         <a href="1Quiz.html">1 Quiz-Biblico</a><br>
         <a href="2 Quiz biblico.html"> 2 Quiz Biblico</a> <br>
-         <a href="3-Quiz-Biblico.html"> 4 Quiz Biblico</a><br>
+         <a href="3-Quiz-Biblico.html"> 3 Quiz Biblico</a><br>
+     
+         </div>
+         <br>
+         
+         
+         <div class="som">
+            <p class="teste">0</p>
+           <audio class="audio" src="" controls></audio> 
+         </div>
+         <div class="harpa">
+            <p class="l1">Conversão</p>
+            <p class="l2">Cristo o Fiel Amigo</p>
+            <p class="l3">De Valor em Valor</p>
+            <p class="l4">Em Fervente Oração</p>
+            <p class="l5">Firme nas Promessas</p>
+            <p class="l6">Grato a Ti</p>
+            <p class="l7">Guarda o Contacto</p>
+            <p class="l8">Guia-me Sempre Meu Senhor</p>
+            <p class="l9">Jesus o Bom Amigo</p>
+            <p class="l10">Mais Perto Meu Deus de Ti</p>
+            <p class="l11">Oh Jesus me Ama</p>
+            <p class="l12">Os Guerreiros se Preparam</p>
+            <p class="l13">Pelo Sangue</p>
+            <p class="l14">Por Que Ele Vive</p>
+            <p class="l15">Se Cristo Comigo Vai</p>
+            <p class="l16">Ser Valente</p>
+            <p class="l17">Sossegai</p>
+            <p class="l18">Tempo de Segar</p>
+            <p class="l19">Vem Cear</p>
+            <p class="l20">A Face Adorada de Jesus</p>
+            <p class="l21">A Mensagem da Cruz</p>
+            <p class="l22">Alma Abatida</p>
+            <p class="l23">Alvo Mais Que a Neve</p>
+            <p class="l24">Chuva de Gracas</p>
+         
+             </div>
+    
+     
+    <div class="login">
+        <div class="caixa">
+            <p>Qual seu Nome?</p><br>
+            <input class="input" type="text"><br><br>
+            <button class="btn">Entrar</button>
+
+        </div>
+            <div class="laoding">
+               <h1 class="h1"><p class="p1"></p><p class="p2"></p><p class="p3"></p></h1>
+            </div>
+    </div>
+    <div class="palavra">
+        <h1 class="h1pal">Gálatas</h1>
+        ******************   
+        <br>
+        <h2 class="h2pal">verciculos</h2>
+       
+        <audio class="audio1" src=""></audio><br><br>
+        <button class="voltar">Iniciar</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button class="proximo">Proximo</button>
     </div>
 
 
-
-
-
-
-
-
-     <div class="harpa">
-        <p class="l1">Conversão</p>
-        <p class="l2">Cristo o Fiel Amigo</p>
-        <p class="l3">De Valor em Valor</p>
-        <p class="l4">Em Fervente Oração</p>
-        <p class="l5">Firme nas Promessas</p>
-        <p class="l6">Grato a Ti</p>
-        <p class="l7">Guarda o Contacto</p>
-        <p class="l8">Guia-me Sempre Meu Senhor</p>
-        <p class="l9">Jesus o Bom Amigo</p>
-        <p class="l10">Mais Perto Meu Deus de Ti</p>
-        <p class="l11">Oh Jesus me Ama</p>
-        <p class="l12">Os Guerreiros se Preparam</p>
-        <p class="l13">Pelo Sangue</p>
-        <p class="l14">Por Que Ele Vive</p>
-        <p class="l15">Se Cristo Comigo Vai</p>
-        <p class="l16">Ser Valente</p>
-        <p class="l17">Sossegai</p>
-        <p class="l18">Tempo de Segar</p>
-        <p class="l19">Vem Cear</p>
-        <p class="l20">A Face Adorada de Jesus</p>
-        <p class="l21">A Mensagem da Cruz</p>
-        <p class="l22">Alma Abatida</p>
-        <p class="l23">Alvo Mais Que a Neve</p>
-        <p class="l24">Chuva de Gracas</p>
-     </div>
-     <div class="som">
-        <p class="teste">0</p>
-          <audio class="audio" src="" controls></audio>
-
-     </div>
-     
-      
-
-
-     
-     <div class="palavra">
-        <h1>Gálatas 1</h1>
-        <h2 class="h2"></h2>
-      <audio class="audio5" src=""></audio>
-      <button class="volta">Iniciar</button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-      <button class="proximo">Proximo</button>
-
-
-
-    </div>
-
-
-
-
-
-
-
-</body>
-<script>
-    const h1 = document.querySelector(".h1")
-  var saudasao =[
+ </body>
+   <script>
+    // arrays *****************
+    var saudasao =[
     /*0*/"boa madrugada",
   /*1*/"boa madrugada",
   /*2*/"boa madrugada",
@@ -507,159 +475,225 @@ h1{
 
 
     ]
-     
-
-
-
-
-  
- 
-  
-  
-  
-  
-  var data = new Date()
-  var hora = data.getHours()
-  
-  
-  function entre(){
-  
-  var input = document.querySelector(".input").value
-      if (input=="") {
-  
-        alert("é obrigatorio colocar o seu nome")
-          
-      } else {
-        h1.innerHTML="seja muito bem vindo"+ "   "+input
-         document.querySelector(".login").style.display="none"
-        document.querySelector(".menu").style.display="block" 
-        if ('speechSynthesis' in window) {
-              const utterance = new SpeechSynthesisUtterance( saudasao[hora]  +input +"   "+"seja muito bem vindo ao  canal estudo bíblico" );
-               utterance.lang = 'pt-BR';
-  
-            speechSynthesis.speak(utterance);
-          } else {
-             alert('Desculpe, seu navegador não suporta a API Web Speech.');
-          }
-          var idica = setInterval(() => {
-              document.querySelector(".a1").style.backgroundColor= "gold";
-  
-              if ('speechSynthesis' in window) {
-              const utterance = new SpeechSynthesisUtterance( "estudo vc tem as opções de estudo a seu quiterio e tem o bonos  extra" );
-               utterance.lang = 'pt-BR';
-                speechSynthesis.speak(utterance);
-                
-                clearInterval(idica)
-          
-  
-  
-          } else {
-             alert('Desculpe, seu navegador não suporta a API Web Speech.');
-          } 
-             var dica2 = setInterval(() =>{
-                       document.querySelector(".a1").style.backgroundColor= "red";
-                        document.querySelector(".a2").style.backgroundColor= "gold";
-                    if ('speechSynthesis' in window) {
-                      const utterance = new SpeechSynthesisUtterance( "quiz bíblico você escolhe o quiz desejado para jogar" );
-                        utterance.lang = 'pt-BR';
-                       speechSynthesis.speak(utterance);
-                
-                clearInterval(dica2)
-          
-  
-  
-                 } else {
-                     alert('Desculpe, seu navegador não suporta a API Web Speech.');
-                    }
-  
-                     var dica3 = setInterval(() =>{
-                      document.querySelector(".a1").style.backgroundColor= "red";
-                        document.querySelector(".a2").style.backgroundColor= "red";
-                        document.querySelector(".a3").style.backgroundColor= "gold";
-                    if ('speechSynthesis' in window) {
-                      const utterance = new SpeechSynthesisUtterance( "24 Hinos da harpa você esculta de um em um até completar 7 hinos para você receba a palavra do dia" );
-                        utterance.lang = 'pt-BR';
-                       speechSynthesis.speak(utterance);
-                
-                      clearInterval(dica3)
-          
-  
-  
-                 } else {
-                     alert('Desculpe, seu navegador não suporta a API Web Speech.');
-                    }
-  
-                     var final = setInterval(()  =>{
-                      document.querySelector(".a1").style.backgroundColor= "red";
-                        document.querySelector(".a2").style.backgroundColor= "red";
-                        document.querySelector(".a3").style.backgroundColor= "red";
-                    if ('speechSynthesis' in window) {
-                      const utterance = new SpeechSynthesisUtterance( "esse site não tem linck pois toda obra e pra glorias a jesus, então dê um gloria para jesus  " );
-                        utterance.lang = 'pt-BR';
-                       speechSynthesis.speak(utterance);
-                
-                      clearInterval(final)
-          
-  
-  
-                 } else {
-                     alert('Desculpe, seu navegador não suporta a API Web Speech.');
-                    }
-  
-  
-                     },7000);
-  
-  
-                     },6000);
-  
-  
-  
-  
-                },6000);
-              
-          }, 5000);
-      
-      }
-       // JS
-  
-  
-  
-  
-  }
-  var a3 = document.querySelector(".a3")
-  var harpa = document.querySelector(".harpa")
-  var som = document.querySelector(".som")
-  var audio = document.querySelector(".audio")
-  
-  
-  a3.addEventListener("click", () =>{
-  harpa.style.display="block"
-  
-  })
-  
-  harpa.addEventListener("mouseleave", () => {
-      harpa.style.display="none"
-  
-  })
-  
-  devoci=0
-  var minu=""
-  var seg=""
-  var correntTimerhor=""
-  var correntTimermin=""
-  var correntTimerseg=""
-  
-   
     
+    var data = new Date()
+     var hora = data.getHours()
+    // final dos array**************
+
+
+
+
+
+    // login e menu**********************
+    var a1=[
+        ".",
+        ".",
+        ".",
+        "",
+    ]
+
+    var b1=[
+        "",
+        ".",
+        ".",
+        "",
+    ]
+
+    var c1=[
+        "",
+        "",
+        ".",
+        "",
+    ]
+    
+    var home = document.querySelector(".home")
+    var login = document.querySelector(".login")
+    var caixa = document.querySelector(".caixa")
+    var btn = document.querySelector(".btn")
+    var h1 = document.querySelector(".h1")
+    var p1 = document.querySelector(".p1")
+    var p2 = document.querySelector(".p2")
+    var p3 = document.querySelector(".p3")
+    var cont=0
+    var muda = 0
+
+
+    btn.addEventListener("click", () => {
+        
+         var input= document.querySelector(".input").value
+      
+         if(input==""){
+        
+            alert("e obrigatorio colocar o seu nome!")
+            
+        } else {
+            caixa.style.display="none"
+            var time = setInterval(() => {
+                 cont++
+                if (cont==100) {
+                    cont=0
+                    login.style.display="none"
+                document.querySelector(".menu").style.display="block"
+                document.querySelector(".h2").innerHTML="Olá seja muito bem vindo            "+input
+                    
+                    const utterance = new SpeechSynthesisUtterance( saudasao[hora]  +input +"   "+"seja muito bem vindo ao  canal estudo bíblico" );
+                    utterance.lang = 'pt-BR';
   
-  
-  
-  
-  document.querySelector(".l1").addEventListener("click", () =>{
-  
+                   speechSynthesis.speak(utterance);
+                   
+                   clearInterval(time)
+
+                var dica = setInterval(() => {
+                    document.querySelector("#img1").style.backgroundColor= "gold";
+                    const utterance = new SpeechSynthesisUtterance( "estudo vc tem as opções de estudo a seu quiterio e tem o bonos  extra" );
+                    utterance.lang = 'pt-BR';
+                    speechSynthesis.speak(utterance);
+                    clearInterval(dica)
+
+                    var jogo = setInterval(() => {
+                        document.querySelector("#img1").style.backgroundColor= "rgb(247, 29, 29)";
+                        document.querySelector("#img2").style.backgroundColor= "gold";
+                        const utterance = new SpeechSynthesisUtterance( "quiz bíblico você escolhe o quiz desejado para jogar" );
+                        utterance.lang = 'pt-BR';
+                       speechSynthesis.speak(utterance);
+                       clearInterval(jogo)
+                       var har = setInterval(() => {
+                        document.querySelector("#img1").style.backgroundColor= "rgb(247, 29, 29)";
+                        document.querySelector("#img2").style.backgroundColor= "rgb(247, 29, 29)";
+                        document.querySelector("#img3").style.backgroundColor= "gold";
+                        const utterance = new SpeechSynthesisUtterance( "24 Hinos da harpa você esculta de um em um até completar 7 hinos para você receba a palavra do dia" );
+                        utterance.lang = 'pt-BR';
+                       speechSynthesis.speak(utterance);
+                       clearInterval(har)
+                       var find = setInterval(() => {
+                        document.querySelector("#img1").style.backgroundColor= "rgb(247, 29, 29)";
+                        document.querySelector("#img2").style.backgroundColor= "rgb(247, 29, 29)";
+                        document.querySelector("#img3").style.backgroundColor= "rgb(247, 29, 29)";
+                        const utterance = new SpeechSynthesisUtterance( "esse site não tem linck pois toda obra e pra glorias a jesus, então dê um gloria para jesus  " );
+                        utterance.lang = 'pt-BR';
+                       speechSynthesis.speak(utterance);
+                       clearInterval(find)
+                        
+                       }, 12000);
+
+
+
+                        
+                       }, 6000);
+                        
+                    }, 7000);
+
+
+
+
+                    
+                }, 7000);
+
+
+                 
+
+                   
+
+
+                } else {
+                    if (muda==3) {
+                       muda=0
+                     } else {
+                         muda++ 
+         
+                      }
+                     p1=a1[muda]
+                      p2=b1[muda]
+                       p3=c1[muda]
+                       h1.innerHTML="Loading"+p1+p2+p3
+                }
+
+
+            }, 100);
+           
+            
+        }
+        
+    })
+
+    
+    //final de login e menu**********
+
+      var img1 = document.querySelector("#img1")
+    var img2 = document.querySelector("#img2")
+    var img3 = document.querySelector("#img3")
+    var estudo = document.querySelector(".estudo")
+    var Quiz = document.querySelector(".Quiz")
+    var harpa = document.querySelector(".harpa")
+
+    img1.addEventListener("mouseover", () => {
+        document.querySelector("#img1").style.backgroundColor= "gold";
+    })
+    img1.addEventListener("mouseleave", () => {
+        document.querySelector("#img1").style.backgroundColor= "rgb(247, 29, 29)";
+    })
+    img2.addEventListener("mouseover", () => {
+        document.querySelector("#img2").style.backgroundColor= "gold";
+    })
+    img2.addEventListener("mouseleave", () => {
+        document.querySelector("#img2").style.backgroundColor= "rgb(247, 29, 29)";
+    })
+    img3.addEventListener("mouseover", () => {
+        document.querySelector("#img3").style.backgroundColor= "gold";
+    })
+    img3.addEventListener("mouseleave", () => {
+        document.querySelector("#img3").style.backgroundColor= "rgb(247, 29, 29)";
+    })
+    
+    // menu div home******************
+    
+    img1.addEventListener("click", () =>{
+        
+        estudo.style.display="block"
+        Quiz.style.display="none" 
+        harpa.style.display="none" 
+
+    })
+    estudo.addEventListener("mouseleave",() =>{
+
+        estudo.style.display="none"  
+    })
+
+    img2.addEventListener("click", () =>{
+        
+        estudo.style.display="none"
+        Quiz.style.display="block" 
+        harpa.style.display="none" 
+
+    })
+    Quiz.addEventListener("mouseleave",() =>{
+
+        Quiz.style.display="none"  
+    })
+    img3.addEventListener("click", () =>{
+        
+        estudo.style.display="none"
+        Quiz.style.display="none" 
+        harpa.style.display="block" 
+
+    })
+    harpa.addEventListener("mouseleave",() =>{
+
+        harpa.style.display="none"  
+    })
+  // final de home***************************
+var devoci=0
+//********24 hinos*************************************************
+var som = document.querySelector(".som")
+var audio= document.querySelector(".audio")
+document.querySelector(".l1").addEventListener("click", () =>{
+ 
   audio.src="Conversao.mp3"
+  
   som.style.display="block"
+  
   harpa.style.display="none"
+   
   var time=  setInterval(() => {
       hor= Math.floor(audio.duration / 3600)
     
@@ -1423,98 +1457,55 @@ h1{
             
         document.querySelector(".teste").innerHTML=devoci
            }, 100);
-  
-           
+
+ })
+//*******final dos 24 hinos
+
+
+var audio1 = document.querySelector(".audio1")
+var voltar = document.querySelector(".voltar")
+var proximo = document.querySelector(".proximo")
+var h2pal = document.querySelector(".h2pal")
+var pass=0
+
+voltar.addEventListener("click" , () =>{
+    voltar.innerHTML="voltar"
+    if (pass==0) {
+        
+    } else {
+        pass--
+     
+      
+    } 
+    audio1.src=fala[pass]
+      audio1.play()
+
+})
+
+
+proximo.addEventListener("click",  () => {
+
+    if (pass==23) {
+        pass=0
+        
+    } else {
+        pass++
+        audio1.src=fala[pass]
+        audio1.play()
+    }
+
+
+})
+
+
+ var palavraa = setInterval(() => {
+    h2pal.innerHTML=letra[pass]
+    if (devoci == 7) {
+        document.querySelector(".palavra").style.display="block"
+    }
     
-      
-  })
-  
-      setInterval(() => {
-              if (devoci==7) {
-                  document.querySelector(".palavra").style.display="block"
-                  
-                  devoci=0
-                  
-                  
-              }
-              
-          }, 100);
-      
-  var  a2 = document.querySelector(".a2")    
-   var quiz = document.querySelector(".Quiz")   
-   a2.addEventListener("click", () =>{
-   document.querySelector(".Quiz").style.display="block"
-  
-   })
-   
-   quiz.addEventListener("mouseleave", () => {
-      document.querySelector(".Quiz").style.display="none"  
-   })
-   
-   var a1 = document.querySelector(".a1")
-   var estud = document.querySelector(".estudo")
-      
-     a1.addEventListener("click", () => {
-      estud.style.display="block"
-     }) 
-  
-     estud.addEventListener("mouseleave", () =>{
-      estud.style.display="none"
-     })
+ }, 100);
+        
+   </script>
 
-
-     // devocional em audio e imagem
-
-     var h2 = document.querySelector(".h2")
-        var volta = document.querySelector(".volta")
-        var proximo = document.querySelector(".proximo")
-        var cont =0
-         var audio5 = document.querySelector(".audio5")
-         var Finalizar=0
-
-         volta.addEventListener("click", () => {
-            volta.innerHTML="Voltar"
-           if (cont==0) {
-            
-           } else {
-            cont--
-            
-           }
-          audio5.src=fala[cont] 
-           audio5.play()
-
-        })
-         
-        proximo.addEventListener("click", () => {
-
-            
-           if (cont==23) {
-            proximo.innerHTML="Finalizar"
-               h2.innerHTML="Final"
-            Finalizar++
-           } else {
-            cont++
-            audio5.src=fala[cont] 
-           audio5.play()
-           }
-           
-
-
-        })
-
-       setInterval(() => {
-        if(Finalizar==2){
-            document.querySelector(".palavra").style.display="none"
-        }
-        h2.textContent =letra[cont]
-       }, 10);
-
-
-
-
-
-
-
-    
-  </script>
 </html>
